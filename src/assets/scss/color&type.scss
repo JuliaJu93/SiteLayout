@@ -1,0 +1,58 @@
+$topFirst: 90px;
+$opacityMax: 1;
+
+.colorsGroup{
+    position: absolute;
+    width: 269.26px;
+    height: 610px;
+    left: 149.74px;
+    top: 145px;
+}
+
+@mixin colorExample ($top, $color, $opacity:$opacityMax){
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    top: $top;
+    background: $color;
+    opacity: $opacity;
+}
+
+.colorExample1{
+    @include colorExample(0,$Dark_Shade_100)
+}
+.colorExample2{
+    @include colorExample($topFirst,$Dark_Shade_100, $opacityMax/2)
+}
+.colorExample3{
+    @include colorExample($topFirst*2,$Dark_Shade_100,$opacityMax/3)
+}
+.colorExample4{
+    @include colorExample($topFirst*3,$Dark_Shade_100,$opacityMax/4)
+}
+.colorExample5{
+    @include colorExample($topFirst*4,$Dark_Shade_100,$opacityMax/20)
+}
+.colorExample6{
+    @include colorExample($topFirst*5,$Purple)
+}
+.colorExample7{
+    @include colorExample($topFirst*6,$Green)
+}
+
+.colorDescription{
+    position: absolute;
+    width: 159px;
+    height: 57px;
+    left: 262.26px;
+    top: 144px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: $Dark_Shade_100;
+}

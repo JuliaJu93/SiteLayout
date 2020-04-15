@@ -1,3 +1,10 @@
-h1 {
-    color: red;
+@import "vars.scss";
+@import "color&type.scss";
+
+.d{
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background: #FFFFFF;
+    margin: 0;
 }

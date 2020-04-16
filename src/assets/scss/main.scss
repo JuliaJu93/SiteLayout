@@ -1,10 +1,14 @@
 @import "vars.scss";
 @import "color&type.scss";
+@import "icon.scss";
 
-.d{
-    position: relative;
-    width: 1440px;
-    height: 900px;
-    background: #FFFFFF;
+.body{
+    width: 100%;
     margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

@@ -1,58 +1,62 @@
-$topFirst: 90px;
 $opacityMax: 1;
 
 .colorsGroup{
-    position: absolute;
-    width: 269.26px;
-    height: 610px;
-    left: 149.74px;
-    top: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width:20%;
+}
+.colorBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    justify-content: start;
+    margin-bottom: 1.5rem;
 }
 
-@mixin colorExample ($top, $color, $opacity:$opacityMax){
-    position: absolute;
+.textNameColor{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 2rem;
+}
+
+@mixin colorExample ($color, $opacity:$opacityMax){
     width: 70px;
     height: 70px;
     border-radius: 6px;
-    top: $top;
     background: $color;
     opacity: $opacity;
 }
 
 .colorExample1{
-    @include colorExample(0,$Dark_Shade_100)
+    @include colorExample($Dark_Shade_100)
 }
 .colorExample2{
-    @include colorExample($topFirst,$Dark_Shade_100, $opacityMax/2)
+    @include colorExample($Dark_Shade_100, $opacityMax/2)
 }
 .colorExample3{
-    @include colorExample($topFirst*2,$Dark_Shade_100,$opacityMax/3)
+    @include colorExample($Dark_Shade_100,$opacityMax/3)
 }
 .colorExample4{
-    @include colorExample($topFirst*3,$Dark_Shade_100,$opacityMax/4)
+    @include colorExample($Dark_Shade_100,$opacityMax/4)
 }
 .colorExample5{
-    @include colorExample($topFirst*4,$Dark_Shade_100,$opacityMax/20)
+    @include colorExample($Dark_Shade_100,$opacityMax/20)
 }
 .colorExample6{
-    @include colorExample($topFirst*5,$Purple)
+    @include colorExample($Purple)
 }
 .colorExample7{
-    @include colorExample($topFirst*6,$Green)
+    @include colorExample($Green)
 }
 
 .colorDescription{
-    position: absolute;
-    width: 159px;
-    height: 57px;
-    left: 262.26px;
-    top: 144px;
-    font-family: Quicksand;
+    font-family: $MainFont;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
     color: $Dark_Shade_100;
+    margin:0;
 }

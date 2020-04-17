@@ -1,6 +1,15 @@
 @font-face {
-    font-family: "Quicksand";
-    src: url('/assets/fonts/Quicksand/Quicksand-Bold.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/Quicksand/Quicksand-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/Quicksand/Quicksand-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('/assets/fonts/Quicksand/Quicksand-Bold.ttf')  format('truetype'), /* Safari, AnQuicksand
+    font-family: "Quicksand-Regular";
+    src: url('/assets/fonts/Quicksand/Quicksand-Regular.eot');
+    src: url('/assets/fonts/Quicksand/Quicksand-Regular.eot?#iefix') format('embedded-opentype'), 
+         url('/assets/fonts/Quicksand/Quicksand-Regular.woff') format('woff'), 
+         url('/assets/fonts/Quicksand/Quicksand-Regular.ttf')  format('truetype'), 
+  };
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('/assets/fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('/assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), 
+    url('/assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff'), 
+    url('/assets/fonts/Montserrat/Montserrat-Regular.ttf')  format('truetype'), 
+};

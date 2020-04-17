@@ -4,7 +4,7 @@ mixin colorBlock(className, textNameColor, textHex)
         square(class=className)
         .textNameColor
             p.colorDescription=textNameColor 
-            p.colorDescription=textHex  
+            p.colorDescription.hex=textHex  
 
 .colorsGroup
     for i in [{class: "colorExample1", name:"Dark Shade 100%", hex: darkShade},{class: "colorExample2", name:"Dark Shade 75%", hex: darkShade},{class: "colorExample3", name:"Dark Shade 50%", hex: darkShade},{class: "colorExample4", name:"Dark Shade 25%", hex: darkShade},{class: "colorExample5", name:"Dark Shade 5%", hex: darkShade},{class: "colorExample6", name:"Purple", hex: "#BC9CFF"},{class: "colorExample7", name:"Green", hex: "#6FCF97"}]

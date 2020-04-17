@@ -1,5 +1,3 @@
-$opacityMax: 1;
-
 .colorsGroup{
     display: flex;
     flex-direction: column;
@@ -13,7 +11,6 @@ $opacityMax: 1;
     justify-content: start;
     margin-bottom: 1.5rem;
 }
-
 .textNameColor{
     display: flex;
     flex-direction: column;
@@ -21,7 +18,7 @@ $opacityMax: 1;
     margin-left: 2rem;
 }
 
-@mixin colorExample ($color, $opacity:$opacityMax){
+@mixin colorExample ($color, $opacity:1){
     width: 70px;
     height: 70px;
     border-radius: 6px;
@@ -33,16 +30,16 @@ $opacityMax: 1;
     @include colorExample($Dark_Shade_100)
 }
 .colorExample2{
-    @include colorExample($Dark_Shade_100, $opacityMax/2)
+    @include colorExample($Dark_Shade_100, 1/2)
 }
 .colorExample3{
-    @include colorExample($Dark_Shade_100,$opacityMax/3)
+    @include colorExample($Dark_Shade_100,1/3)
 }
 .colorExample4{
-    @include colorExample($Dark_Shade_100,$opacityMax/4)
+    @include colorExample($Dark_Shade_100,1/4)
 }
 .colorExample5{
-    @include colorExample($Dark_Shade_100,$opacityMax/20)
+    @include colorExample($Dark_Shade_100,1/20)
 }
 .colorExample6{
     @include colorExample($Purple)
@@ -52,7 +49,7 @@ $opacityMax: 1;
 }
 
 .colorDescription{
-    font-family: $MainFont;
+    font-family: $AdditionalFont;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -60,3 +57,8 @@ $opacityMax: 1;
     color: $Dark_Shade_100;
     margin:0;
 }
+.hex{
+    font-weight: normal;  
+}
+
+

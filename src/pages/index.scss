@@ -1,6 +1,6 @@
-@import "vars.scss";
-@import "color&type.scss";
-@import "icon.scss";
+@import "../assets/scss/vars.scss";
+@import "/ui-kit/color&type/color&type.scss";
+@import "../blocks/icon/icon.scss";
 
 .body{
     width: 100%;

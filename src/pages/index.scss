@@ -1,5 +1,5 @@
-@import "../assets/scss/vars.scss";
-@import "/ui-kit/color&type/color&type.scss";
+@import "colors&fonts.scss";
+@import "/ui-kit/colors&type/colors&type.scss";
 @import "../blocks/icon/icon.scss";
 
 .body{
@@ -12,4 +12,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }

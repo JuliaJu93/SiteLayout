@@ -1,10 +1,10 @@
-.colorsGroup{
+.Group{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width:20%;
+    padding: 2rem;
 }
-.colorBlock{
+.Block{
     display: flex;
     flex-direction: row;
     align-items: center;   
@@ -19,9 +19,9 @@
 }
 
 @mixin colorExample ($color, $opacity:1){
-    width: 70px;
-    height: 70px;
-    border-radius: 6px;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 0.5rem;
     background: $color;
     opacity: $opacity;
 }
@@ -49,16 +49,44 @@
 }
 
 .colorDescription{
-    font-family: $AdditionalFont;
+    font-family: $MainFont;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 29px;
+    font-size: 1.3rem;
+    line-height: 2rem;
     color: $Dark_Shade_100;
-    margin:0;
+    margin: 0;
 }
-.hex{
+.colorDescription_font_normal{
     font-weight: normal;  
 }
 
+.namesHeading{
+    font-family: $MainFont;;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    width: 2rem;
+    margin-right: 2rem;
+}
 
+.namesHeading_type_h1{
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+}
+
+.namesHeading_type_h2{
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+}
+
+.namesHeading_type_h3{
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+}
+
+.namesHeading_type_body{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}

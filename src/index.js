@@ -1,2 +1,1 @@
-import './js/common'
-import './pages/index.scss'
+import './layout/main.scss'

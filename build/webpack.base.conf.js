@@ -90,6 +90,16 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: false,
+      template: `${PATHS.src}/pages/ui-kit/colors&type/colors&type.pug`,
+      filename: './colors&type.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/pages/ui-kit/form-elements/form-elements.pug`,
+      filename: './form-elements.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
       template: `${PATHS.src}/index.html`,
       filename: './index.html'
     }),

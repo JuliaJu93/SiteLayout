@@ -1,26 +1,30 @@
--var darkShade='#1F2041';
+extends ../../../layout/main 
+block variables
+    - var title = 'Colors&Type';
+    - var darkShade='#1F2041';
+
+    include ../../../blocks/icon/icon
+        .container
+            .Group
+                for i in [{class: "colorExample1", name:"Dark Shade 100%", hex: darkShade},{class: "colorExample2", name:"Dark Shade 75%", hex: darkShade},{class: "colorExample3", name:"Dark Shade 50%", hex: darkShade},{class: "colorExample4", name:"Dark Shade 25%", hex: darkShade},{class: "colorExample5", name:"Dark Shade 5%", hex: darkShade},{class: "colorExample6", name:"Purple", hex: "#BC9CFF"},{class: "colorExample7", name:"Green", hex: "#6FCF97"}]
+                    +colorBlock(i.class, i.name, i.hex)
+            .Group
+                .Block
+                    p.namesHeading.namesHeading_type_h1 H1
+                    h1.heading.heading_type_h1 This one is the sub-section or widget title
+                .Block
+                    p.namesHeading.namesHeading_type_h2 H2
+                    h2.heading.heading_type_h2 Next one is the item title inside widgets
+                .Block
+                    p.namesHeading.namesHeading_type_h3 H3
+                    h3.heading.heading_type_h3 This is a label or CTA text
+                .Block
+                    p.namesHeading.namesHeading_type_body body
+                    p.bodyText This is the body text which is used for most of the design, like paragraphs, lists, etc
+
 mixin colorBlock(className, textNameColor, textHex)
     .Block
         square(class=className)
         .textNameColor
             p.colorDescription=textNameColor 
             p.colorDescription.colorDescription_font_normal=textHex  
-
-.Group
-    for i in [{class: "colorExample1", name:"Dark Shade 100%", hex: darkShade},{class: "colorExample2", name:"Dark Shade 75%", hex: darkShade},{class: "colorExample3", name:"Dark Shade 50%", hex: darkShade},{class: "colorExample4", name:"Dark Shade 25%", hex: darkShade},{class: "colorExample5", name:"Dark Shade 5%", hex: darkShade},{class: "colorExample6", name:"Purple", hex: "#BC9CFF"},{class: "colorExample7", name:"Green", hex: "#6FCF97"}]
-        +colorBlock(i.class, i.name, i.hex) 
-
-.Group
-    .Block
-        p.namesHeading.namesHeading_type_h1 H1
-        h1.heading.heading_type_h1 This one is the sub-section or widget title
-    .Block
-        p.namesHeading.namesHeading_type_h2 H2
-        h2.heading.heading_type_h2 Next one is the item title inside widgets
-    .Block
-        p.namesHeading.namesHeading_type_h3 H3
-        h3.heading.heading_type_h3 This is a label or CTA text
-    .Block
-        p.namesHeading.namesHeading_type_body body
-        p.body This is the body text which is used for most of the design, like paragraphs, lists, etc
-

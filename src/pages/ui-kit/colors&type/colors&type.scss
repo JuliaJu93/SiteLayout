@@ -27,19 +27,19 @@
 }
 
 .colorExample1{
-    @include colorExample($Dark_Shade_100)
+    @include colorExample($MainColor)
 }
 .colorExample2{
-    @include colorExample($Dark_Shade_100, 1/2)
+    @include colorExample($ColorAdd-ons)
 }
 .colorExample3{
-    @include colorExample($Dark_Shade_100,1/3)
+    @include colorExample($AdditionalColor)
 }
 .colorExample4{
-    @include colorExample($Dark_Shade_100,1/4)
+    @include colorExample($ColorOfInactiveElements)
 }
 .colorExample5{
-    @include colorExample($Dark_Shade_100,1/20)
+    @include colorExample($MainColor,1/20)
 }
 .colorExample6{
     @include colorExample($Purple)
@@ -54,7 +54,7 @@
     font-weight: bold;
     font-size: 1.3rem;
     line-height: 2rem;
-    color: $Dark_Shade_100;
+    color: $MainColor;
     margin: 0;
 }
 .colorDescription_font_normal{
@@ -65,7 +65,7 @@
     font-family: $MainFont;;
     font-style: normal;
     font-weight: normal;
-    color: rgba(31, 32, 65, 0.25);
+    color: $ColorOfInactiveElements;
     width: 2rem;
     margin-right: 2rem;
 }

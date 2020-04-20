@@ -1,0 +1,6 @@
+mixin blockInput(label, id, placeholder, explanation)
+    .blockInput
+        .blockInput__textAboveInput
+            label.heading.heading_type_h3(for=id)=label
+            p.bodyText=explanation
+        Input.body.blockInput__InputEmail(type=email, id=id, placeholder=placeholder)

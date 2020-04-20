@@ -1,4 +1,7 @@
-$Dark_Shade_100: #1F2041;
+$MainColor: #1F2041;
+$AdditionalColor: rgba(31, 32, 65, 0.75);
+$ColorAdd-ons: rgba(31, 32, 65, 0.5);
+$ColorOfInactiveElements:  rgba(31, 32, 65, 0.25);
 $Purple: #BC9CFF;
 $Green: #6FCF97;
 
@@ -9,7 +12,7 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
     font-family: $MainFont;
     font-style: normal;
     font-weight: bold;
-    color: $Dark_Shade_100;
+    color: $MainColor;
 }
 
 .heading_type_h1{
@@ -24,15 +27,15 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
 
 .heading_type_h3{
     font-family: $AdditionalFont;
-    font-size: 0.7rem;
-    line-height: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 
-.body{
+.bodyText{
     font-family: $AdditionalFont;;
     font-style: normal;
     font-weight: normal;
     font-size: 0.9rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75);
+    color: $AdditionalColor;
 }

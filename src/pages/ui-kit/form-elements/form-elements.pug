@@ -1,0 +1,14 @@
+extends ../../../layout/main 
+block variables
+    - var title = 'Form Elements';
+
+    include ../../../blocks/icon/icon
+        .container
+        include ../../../blocks/text-field/text-field
+        include ../../../blocks/dropdown/dropdown
+        +blockInput('TEXT FIELD', 'email', 'Email', 'DEFAULT')
+        +blockInput('TEXT FIELD', 'hover/focus', 'This is pretty awesome', 'HOVER/FOCUS')
+        
+    
+
+

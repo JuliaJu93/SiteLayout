@@ -42,10 +42,10 @@
     @include colorExample($MainColor,1/20)
 }
 .colorExample6{
-    @include colorExample($Purple)
+    @include colorExample($FirstColorGradient)
 }
 .colorExample7{
-    @include colorExample($Green)
+    @include colorExample($SecondColorGradient)
 }
 
 .colorDescription{

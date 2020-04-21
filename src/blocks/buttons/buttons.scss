@@ -1,0 +1,54 @@
+.button{
+    height: 2.7rem;
+    border-radius: 2rem;
+    border: none;
+    margin-right: 1rem;
+    width: 100%;
+}
+
+.button_size_mini{
+    width:30%;
+}
+
+@mixin opacity ($opacity:1){
+    background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
+    color: #FFFFFF;
+    opacity: $opacity;
+}
+
+.button_color_gradient{
+    @include opacity()
+}
+
+.button_color_gradientDull{
+    @include opacity(0.5)
+}
+
+@mixin opacityBorder ($opacity:1){
+    background: #FFFFFF;
+    color: $FirstColorGradient;
+    border: 2px solid $FirstColorGradient;
+    opacity: $opacity;
+}
+
+.button_border_withBorder{
+    @include opacityBorder()
+}
+
+.button_border_withBorderDull{
+    @include opacityBorder(0.5)
+}
+
+@mixin colorLink ($color){
+    text-decoration: none;
+    color: $color;
+    margin-right: 1.5rem;
+}
+
+.lightLink{
+    @include colorLink($FirstColorGradient)
+}
+
+.darkLink{
+    @include colorLink($AdditionalColor)
+}

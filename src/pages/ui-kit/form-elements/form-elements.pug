@@ -2,13 +2,33 @@ extends ../../../layout/main
 block variables
     - var title = 'Form Elements';
 
-    include ../../../blocks/icon/icon
+    include ../../../blocks/logo/logo
         .container
-        include ../../../blocks/text-field/text-field
-        include ../../../blocks/dropdown/dropdown
-        +blockInput('TEXT FIELD', 'email', 'Email', 'DEFAULT')
-        +blockInput('TEXT FIELD', 'hover/focus', 'This is pretty awesome', 'HOVER/FOCUS')
-        
+            .column    
+                include ../../../blocks/text-field/text-field
+                include ../../../blocks/dropdown/dropdown
+                +blockInput('TEXT FIELD', 'email', 'email', 'Email', 'DEFAULT')
+                +blockInput('TEXT FIELD', 'hover/focus', 'text', 'This is pretty awesome', 'HOVER/FOCUS')
+                +blockSection('DROPDOWN', 'email', 'DEFAULT')
+                +blockInput('MASKED TEXT FIELD', 'date', 'text', 'ДД.ММ.ГГГГ', 'DEFAULT')
+            .column 
+            .column
+                .blockContent
+                    .blockText
+                        h3.heading.heading_type_h3 BUTTONS
+                    include ../../../blocks/buttons/buttons
+                    .blockButton
+                        +button('CLICK ME', 'blueButton', 'button_color_gradient', 'button_size_mini')
+                        +button('CLICK ME', 'dullButton', 'button_color_gradientDull', 'button_size_mini')
+                    .blockButton
+                        +button('CLICK ME', 'blueButtonDull', 'button_border_withBorder', 'button_size_mini')
+                        +button('CLICK ME', 'dullButton', 'button_border_withBorderDull', 'button_size_mini')
+                    .blockButton
+                        +link('CLICK ME', 'lightLink', '#')
+                        +link('CLICK ME', 'darkLink', '#')
+                    .blockButton
+                        +button('Перейти к оплате', 'blueButtonMax', 'button_color_gradient')
+
     
 
 

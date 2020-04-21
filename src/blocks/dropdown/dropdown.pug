@@ -1,0 +1,10 @@
+mixin blockSection(label, id, explanation)
+    .blockInput
+        .blockInput__textAboveInput
+            label.heading.heading_type_h3(for=id)=label
+            p.bodyText=explanation
+        select.bodyText.blockInput__Input(id=id)
+            option(value="" hidden disabled selected) Сколько гостей
+            option Взрослые
+            option Дети
+            option Младенцы

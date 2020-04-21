@@ -12,7 +12,7 @@
     height: 2.2rem;
 }
 
-.blockInput__InputEmail{
+.blockInput__Input{
     margin: 0.3rem 0 0.3rem;
     border: 1px solid $ColorOfInactiveElements;
     border-radius: 0.3rem;
@@ -23,7 +23,6 @@
 input::-webkit-input-placeholder { 
     color:$ColorOfInactiveElements; 
 }
-
 input:hover{
     color: $AdditionalColor;
     border: 1px solid $AdditionalColor;

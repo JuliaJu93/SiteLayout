@@ -1,10 +1,15 @@
 /* FONT PATH
  * -------------------------- */
+$fa-version: Font Awesome 4;
+$fa-font-path: fonts/fontawesome-webfont;
 
  @font-face {
-  font-family: "fontawesome-webfont";
-  src: url('/fonts/fontawesome-webfont/fontawesome-webfont.eot');
-  src: url('/fonts/fontawesome-webfont/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), 
-       url('/fonts/fontawesome-webfont/fontawesome-webfont.woff') format('woff'), 
-       url('/fonts/fontawesome-webfont/fontawesome-webfont.ttf')  format('truetype'), 
-};
+     font-family: 'FontAwesome';
+     src: url('/#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+     src: url('/#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+       url('/#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+       url('/#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype');
+   //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+     font-weight: normal;
+     font-style: normal;
+   }

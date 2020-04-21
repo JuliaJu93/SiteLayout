@@ -21,13 +21,15 @@ block variables
                         +button('CLICK ME', 'blueButton', 'button_color_gradient', 'button_size_mini')
                         +button('CLICK ME', 'dullButton', 'button_color_gradientDull', 'button_size_mini')
                     .blockButton
-                        +button('CLICK ME', 'blueButtonDull', 'button_border_withBorder', 'button_size_mini')
-                        +button('CLICK ME', 'dullButton', 'button_border_withBorderDull', 'button_size_mini')
+                        .module-border-wrap
+                            +button('CLICK ME', 'blueButtonDull', 'button_border_withBorder', 'button_size_mini')
+                        .module-border-wrap.borderDull
+                            +button('CLICK ME', 'dullButton', 'button_border_withBorder', 'button_size_mini')
                     .blockButton
                         +link('CLICK ME', 'lightLink', '#')
                         +link('CLICK ME', 'darkLink', '#')
                     .blockButton
-                        +button('Перейти к оплате', 'blueButtonMax', 'button_color_gradient')
+                        +button('ПЕРЕЙТИ К ОПЛАТЕ', 'blueButtonMax', 'button_color_gradient')
 
     
 

@@ -1,7 +1,7 @@
 mixin button(name,id,color,size)
     button.heading.heading_type_h3.button(class=color, class=size, id=id)=name
         if !size
-            i.fa.fa-home 
+            i.fa.fa-arrow-right.fa-lg(aria-hidden="true")
 
 mixin link(text, color, link)
     a.heading.heading_type_h3(href=link, class=color)=text

@@ -11,7 +11,21 @@ block variables
                 +blockInput('TEXT FIELD', 'hover/focus', 'text', 'This is pretty awesome', 'HOVER/FOCUS')
                 +blockSection('DROPDOWN', 'email', 'DEFAULT')
                 +blockInput('MASKED TEXT FIELD', 'date', 'text', 'ДД.ММ.ГГГГ', 'DEFAULT')
-            .column 
+            .column
+                .blockContent
+                    .blockText
+                        h3.heading.heading_type_h3 CHECKBOX BUTTONS
+                    include ../../../blocks/checkbox-buttons/checkbox-buttons
+                    +checkbox('smoking','Можно курить')
+                    +checkbox('pets','Можно с питомцами')
+                    +checkbox('guests','Можно пригласить гостей (до 10 человек)')
+                .blockContent
+                    .blockText
+                        h3.heading.heading_type_h3 RADIO BUTTONS
+                    .blockButton
+                        include ../../../blocks/radio-buttons/radio-buttons
+                        +radio('Men','Мужчина')
+                        +radio('Woman','Женщина')
             .column
                 .blockContent
                     .blockText

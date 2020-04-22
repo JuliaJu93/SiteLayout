@@ -31,11 +31,16 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
     line-height: 1.5rem;
 }
 
+.heading_type_h3Light{
+    color: $ColorAdd-ons;
+    font-weight: normal;
+}
+
 .bodyText{
     font-family: $AdditionalFont;;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
     color: $AdditionalColor;
 }

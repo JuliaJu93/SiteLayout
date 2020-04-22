@@ -20,11 +20,9 @@
     color: #FFFFFF;
     opacity: $opacity;
 }
-
 .button_color_gradient{
     @include opacity()
 }
-
 .button_color_gradientDull{
     @include opacity(0.5)
 }
@@ -55,11 +53,9 @@
     color: $color;
     margin-right: 1.5rem;
 }
-
 .lightLink{
     @include colorLink($FirstColorGradient)
 }
-
 .darkLink{
     @include colorLink($ColorAdd-ons)
 }

@@ -3,6 +3,8 @@
 @import "../../../blocks/buttons/buttons.scss";
 @import "../../../blocks/checkbox-buttons/checkbox-buttons.scss";
 @import "../../../blocks/radio-buttons/radio-buttons.scss";
+@import "../../../blocks/toggle/toggle.scss";
+@import "../../../blocks/like-button/like-button.scss";
 
 .column {
     display: flex;
@@ -26,4 +28,9 @@
     display: flex;
     flex-direction: row; 
     margin-bottom: 2rem; 
+}
+
+.blockGroup{
+    display: flex;
+    flex-direction: row; 
 }

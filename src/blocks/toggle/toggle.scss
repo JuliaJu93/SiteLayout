@@ -20,8 +20,8 @@ p.heading.heading_type_h3Light{
 .buttonToggle{
     position: relative;
     top: 50%;
-    width: 53px;
-    height: 24px;
+    width: 40px;
+    height: 20px;
     margin: -12px 1rem 0 0;
     overflow: hidden;
 }
@@ -31,7 +31,7 @@ p.heading.heading_type_h3Light{
 }
 
 .buttonToggle.r, .layer::before{
-    border: 1px solid #BC9CFF;
+    border: 1px solid $FirstColorGradient;
 }
 
 .checkboxToggle{
@@ -59,25 +59,25 @@ p.heading.heading_type_h3Light{
 #button-1 .knobs:before{
     content: '';
     position: absolute;
-    top: 2px;
+    top: 1px;
     left: 3px;
-    width: 10px;
-    height: 1px;
+    width: 8px;
+    height: 0;
     color: #fff;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
     line-height: 1;
     padding: 9px 4px;
-    background: rgba(31, 32, 65, 0.25);
+    background: $ColorOfInactiveElements;
     border-radius: 50%;
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
 
 #button-1 .checkboxToggle:checked + .knobs:before{
     content: '';
-    left: 33px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    left: 22px;
+    background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
 }
 
 #button-1 .knobs, #button-1 .knobs:before, #button-1 .layer{

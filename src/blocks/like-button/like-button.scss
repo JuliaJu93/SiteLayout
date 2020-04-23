@@ -1,0 +1,41 @@
+.like-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 2.5rem;
+    height: 1.2rem;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    font-size: 0.5rem;
+}
+
+.styleNumber{
+    font-family: $MainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    text-align: center;
+    color: $FirstColorGradient;
+    margin:0;
+}
+
+.like-button_state_active{
+    border: 1px solid $AdditionalColor;
+    color: $AdditionalColor;
+}
+
+.like-button_state_passive{
+    border: 1px solid $ColorOfInactiveElements;
+    color: $FirstColorGradient;
+}
+
+.hide{
+    display: none;
+    opacity: 0;
+    z-index: 3;
+}
+
+.fa.fa-heart{
+    margin-left: -20px;
+}

@@ -1,0 +1,19 @@
+mixin checkboxList (name)
+    .blockCheckboxList
+        h3.heading.heading_type_h3=name
+        i.fa.fa-angle-down.heading.heading_type_h3Light(aria-hidden="true", id="arrow")
+    .checkboxList.hide(id="checkboxList")
+        +checkbox("breakfast", "Завтрак")
+        +checkbox("table","Письменный стол")
+        +checkbox("chear","Стул для кормления")
+        +checkbox("bad","Кроватка")
+        +checkbox("thereIsNeverALottTv","Телевизор")
+        +checkbox("shampoo","Шампунь")
+        +checkbox("tv","Телевизор")
+        +checkbox("shampooToo","Шампунь")
+
+
+mixin checkbox(id,text)
+    .blockCheckbox
+        input.checkbox(type='checkbox', id=id)
+        label.heading.heading_type_h3Light(for=id)=text

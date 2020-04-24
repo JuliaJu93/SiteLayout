@@ -1,0 +1,18 @@
+ul.list{
+    margin: 0;
+    padding-left: 0;
+    list-style: none; 
+}
+
+.blockList{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    align-items: baseline;
+}
+
+i.fa.fa-circle{
+    color: $ColorOfInactiveElements;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}

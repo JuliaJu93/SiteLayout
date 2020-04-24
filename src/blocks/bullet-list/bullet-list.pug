@@ -1,0 +1,11 @@
+mixin list(text)
+    .blockList
+        i.fa.fa-circle(aria-hidden="true")
+        li.heading.heading_type_h3Light=text
+
+ul.list
+    +list('Нельзя с питомцами')
+    +list('Без вечеринок и мероприятий')
+    +list('Время прибытия — после 13:00, а выезд до 12:00 ')
+
+

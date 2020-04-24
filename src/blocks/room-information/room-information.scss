@@ -1,0 +1,17 @@
+.blockContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 0 0.5rem 0;
+    
+}
+
+.blockForText{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+#p, h3{
+    margin:0.2rem;
+}

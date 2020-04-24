@@ -30,11 +30,16 @@ block variables
                     .blockText
                         h3.heading.heading_type_h3 TOGGLE
                     include ../../../blocks/toggle/toggle
-                    include ../../../blocks/toggle/toggle
                 .blockContent
                     .blockText
                         h3.heading.heading_type_h3 LIKE BUTTON
                     include ../../../blocks/like-button/like-button
+                .blockContent
+                    .blockText
+                        h3.heading.heading_type_h3 RICH CHECKBOX BUTTON
+                    include ../../../blocks/rich-checkbox-buttons/rich-checkbox-buttons
+                    +richCheckbox('corridor','Широкий коридор', 'Ширина коридоров в номере не менее 91 см')
+                    +richCheckbox('assistant','Помощник для инвалидов', 'На 1 этаже вас встретит специалист и проводит до номера' )
             .column
                 .blockContent
                     .blockText

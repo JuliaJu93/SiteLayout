@@ -36,6 +36,10 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
     font-weight: normal;
 }
 
+.heading_color_75{
+    color: $AdditionalColor;
+}
+
 .bodyText{
     font-family: $AdditionalFont;;
     font-style: normal;
@@ -44,3 +48,12 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
     line-height: 1.7rem;
     color: $AdditionalColor;
 }
+
+.bodyText_type_mini{
+    color: $ColorAdd-ons;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+
+
+

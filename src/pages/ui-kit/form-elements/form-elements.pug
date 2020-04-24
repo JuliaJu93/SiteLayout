@@ -45,7 +45,12 @@ block variables
                     include ../../../blocks/rich-checkbox-buttons/rich-checkbox-buttons
                     +richCheckbox('corridor','Широкий коридор', 'Ширина коридоров в номере не менее 91 см')
                     +richCheckbox('assistant','Помощник для инвалидов', 'На 1 этаже вас встретит специалист и проводит до номера' )
+                .blockContent
+                    .blockText
+                        h3.heading.heading_type_h3 RATE BUTTON
+                    include ../../../blocks/rate-button/rate-button   
             .column
+                include ../../../blocks/range-slider/range-slider
                 .blockContent
                     .blockText
                         h3.heading.heading_type_h3 BUTTONS
@@ -67,7 +72,4 @@ block variables
                     .blockText
                         h3.heading.heading_type_h3 BULLET LIST
                     include ../../../blocks/bullet-list/bullet-list
-                
-    
-
-
+                    

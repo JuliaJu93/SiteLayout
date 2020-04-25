@@ -1,10 +1,17 @@
-mixin blockSection(label, id, explanation)
-    .blockInput
-        .blockInput__textAboveInput
-            label.heading.heading_type_h3(for=id)=label
-            p.heading.heading_type_h3Light=explanation
-        select.bodyText.blockInput__Input(id=id)
-            option(value="" hidden disabled selected) Сколько гостей
-            option Взрослые
-            option Дети
-            option Младенцы
+mixin dropdown (name)
+    h3.heading.heading_type_h3=name
+    .blockDropdownMain
+        .blockDropdownList
+            p.heading.heading_type_h3Light Сколько гостей
+            i.fa.fa-angle-down.heading.heading_type_h3(aria-hidden="true", id="arrowDown")
+        .blockDropdownList 
+            p.heading.heading_type_h3.heading_color_75 Взрослые
+        .blockDropdownList
+            p.heading.heading_type_h3.heading_color_75 Дети
+        .blockDropdownList
+            p.heading.heading_type_h3.heading_color_75 Младенцы
+        .blockDropdownList
+            p.heading.heading_type_h3.heading_color_purple ОЧИСТИТЬ
+            p.heading.heading_type_h3.heading_color_purple ПРИМЕНИТЬ
+
+

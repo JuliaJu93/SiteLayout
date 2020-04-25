@@ -6,10 +6,10 @@ block variables
         .container
             .column    
                 include ../../../blocks/text-field/text-field
-                include ../../../blocks/dropdown/dropdown
                 +blockInput('TEXT FIELD', 'email', 'email', 'Email', 'DEFAULT')
                 +blockInput('TEXT FIELD', 'hover/focus', 'text', 'This is pretty awesome', 'HOVER/FOCUS')
-                +blockSection('DROPDOWN', 'email', 'DEFAULT')
+                include ../../../blocks/dropdown/dropdown
+                +dropdown('DROPDOWN')
                 +blockInput('MASKED TEXT FIELD', 'date', 'text', 'ДД.ММ.ГГГГ', 'DEFAULT')
                 include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list
                 +checkboxList('EXPANDABLE CHECKBOX LIST')

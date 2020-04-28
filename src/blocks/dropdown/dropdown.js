@@ -33,10 +33,6 @@ function CounterPlus (e) {
 function CounterMinus (e) {
   let p = e.target.nextSibling;
   let value = Number(p.innerText);
-  if ((result[0].innerText && result[1].innerText) && result[2].innerText === '0'){
-    clear.classList.add('clearHide');
-  }
-  console.log(result[0].innerText)
   if (value > 0){
   value --;
   p.innerText = value;
@@ -44,6 +40,9 @@ function CounterMinus (e) {
       e.target.classList.add('buttonMinus_type_inactive');
     }
   }
+  if ((result[0].innerText === '0')&&(result[1].innerText === '0')&&(result[2].innerText === '0')){
+    clear.classList.add('clearHide');
+  } 
 }
 
 function Result() {

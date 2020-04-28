@@ -1,5 +1,5 @@
-mixin Counter ()
+mixin Counter (number, className)
     .BlockCounter
-        button.buttonMinus.buttonMinus_type_inactive() -
-        p.heading.heading_type_h3.pCounter() 0
+        button.buttonMinus(class=className) -
+        p.heading.heading_type_h3.pCounter()=number
         button.heading.heading_type_h3.buttonPlus() +

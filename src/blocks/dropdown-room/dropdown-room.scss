@@ -1,4 +1,4 @@
-.blockDropdownMain{
+.blockDropdownRoomMain{
     display: flex;
     flex-direction: column;
     border: 1px solid $ColorOfInactiveElements;
@@ -6,7 +6,7 @@
     border-radius: 5px;
 }
 
-.blockDropdownList{
+.blockRoomList{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -16,14 +16,14 @@
     width: 94%;
 }
 
-.blockDropdownMain > .blockDropdownList:first-child{
+.blockDropdownRoomMain > .blockRoomList:first-child{
     border: 1px solid transparent;
     border-color: transparent transparent $FirstColorGradient transparent;
     color: $ColorOfInactiveElements;
     padding: 0.5rem;
 }
 
-.blockDropdownMain > div.removeUnderline:first-child{
+.blockDropdownRoomMain > div.removeUnderline:first-child{
     border-color: transparent;
 }
 
@@ -32,18 +32,10 @@
     z-index: 99;
 }
 
-.blockDropdownList:last-child{
-    padding: 0.5rem;
-}
-
-.blockDropdownMain .blockDropdownList p{
+.blockDropdownRoomMain .blockRoomList p{
     margin: 0;
 }
 
 .dropdownHide{
     display: none;
-}
-
-.clearHide{
-    visibility: hidden;
 }

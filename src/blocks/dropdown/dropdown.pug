@@ -8,13 +8,13 @@ mixin dropdown (name)
         .blockDropdownAdditional.dropdownHide(id='dropdownHide')
             .blockDropdownList 
                 p.heading.heading_type_h3.heading_color_75 Взрослые
-                +Counter()
+                +Counter('0', 'buttonMinus_type_inactive')
             .blockDropdownList
                 p.heading.heading_type_h3.heading_color_75 Дети
-                +Counter()
+                +Counter('0', 'buttonMinus_type_inactive')
             .blockDropdownList
                 p.heading.heading_type_h3.heading_color_75 Младенцы
-                +Counter()
+                +Counter('0', 'buttonMinus_type_inactive')
             .blockDropdownList
                 p.heading.heading_type_h3.heading_color_purple.clearHide(id = 'clear') ОЧИСТИТЬ
                 p.heading.heading_type_h3.heading_color_purple(id = 'apply') ПРИМЕНИТЬ 

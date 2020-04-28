@@ -1,0 +1,31 @@
+.BlockCounter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.BlockCounter p{
+    padding: 0 1rem;
+}
+
+.BlockCounter button{
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid $FirstColorGradient;
+    color: $FirstColorGradient;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    border-radius:50%;
+}
+
+button.buttonMinus {
+    padding: 8px 14px;
+}
+
+button.buttonMinus_type_inactive{
+    color: $ColorBorder;
+    border-color: $ColorBorder;
+}

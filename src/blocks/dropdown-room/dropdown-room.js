@@ -42,7 +42,7 @@ function CounterMinus (e) {
 function RoomBad (){
     let room = resultRoom[0].innerText;
     console.log(room)
-    let bad = resultRoom[1].innerText;
+    let bed = resultRoom[1].innerText;
     switch (room) {
         case '1':
             room  += ' спальня, ';
@@ -54,16 +54,16 @@ function RoomBad (){
             room  += ' спален, ';
         break;
     }
-    switch (bad) {
+    switch (bed) {
         case '1':
-            bad  += ' кровать...';
+            bed  += ' кровать...';
         break;
         case '2' || '3' || '4':
-            bad  += ' кровати...';
+            bed  += ' кровати...';
         break;
         default:
-            bad  += ' кроватей...';
+            bed  += ' кроватей...';
         break;
     }
-    rooms.innerText = room + bad;
+    rooms.innerText = room + bed;
 }

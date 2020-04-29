@@ -1,6 +1,6 @@
 let clear = document.getElementById('clear');
 let apply = document.getElementById('apply');
-let guests = document.getElementById('guests');
+let guestsDropdown = document.getElementById('guestsDropdown');
 let arrowDown = document.getElementById('arrowDown');
 let list = document.getElementById ('dropdownHide');
 let container = document.getElementById ('container');
@@ -46,7 +46,7 @@ function CounterMinus (e) {
 }
 
 function Result() {
-    let sum = 0;
+  let sum = 0;
   for (let i = 0; i < 3; i++){
     sum = sum + Number(result[i].innerText)   
   }
@@ -62,12 +62,12 @@ function Result() {
         sum  += ' гостей';
       break;
       }
-    guests.innerText = sum;
+  guestsDropdown.innerText = sum;
   }
 }
 
 function Clear() {
-  guests.innerText = "Сколько гостей";
+  guestsDropdown.innerText = "Сколько гостей";
   for (let i = 0; i < 3; i++){
     result[i].innerText = 0;
     minus[i].classList.add('buttonMinus_type_inactive');   

@@ -1,0 +1,36 @@
+.containerPagination{
+    display: flex;
+    flex-direction: column;
+}
+
+.paginationRow{
+    display: flex;
+    flex-direction: row;
+    color: $ColorAdd-ons;
+    font-weight: normal;
+}
+
+.paginationCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    color: #ffffff;
+}
+
+.paginationCircle_color_purple{
+    background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
+}
+
+.paginationCircle_color_green{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.paginationNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}

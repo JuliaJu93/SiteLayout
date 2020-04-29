@@ -1,0 +1,9 @@
+mixin review(name, days, text)    
+    .reviewContainer
+        .reviewColumn
+            img(src='img/review1.png')
+            include ../like-button/like-button
+        .reviewColumn
+            p.heading.heading_type_h3=name
+            p.bodyText=days
+            p.bodyText.reviewPadding=text

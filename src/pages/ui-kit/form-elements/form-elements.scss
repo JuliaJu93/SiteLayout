@@ -1,4 +1,5 @@
 @import "../../../blocks/text-field/text-field.scss";
+@import "../../../blocks/review/review.scss";
 @import "../../../blocks/pagination/pagination.scss";
 @import "../../../blocks/dropdown/dropdown.scss";
 @import "../../../blocks/dropdown-room/dropdown-room.scss";
@@ -16,11 +17,26 @@
 @import "../../../blocks/range-slider/range-slider.scss";
 @import "../../../blocks/rate-button/rate-button.scss";
 
+.rowMain {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.columnMain {
+    display: flex;
+    flex-direction: row;
+}
+
 .column {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 50%;
     padding: 2rem;
+}
+
+.container>.column:first-child{
+    width: 25%;
 }
 
 .blockContent{
@@ -44,3 +60,4 @@
     display: flex;
     flex-direction: row; 
 }
+

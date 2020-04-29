@@ -1,0 +1,26 @@
+.reviewContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewColumn:first-child{
+    justify-content: start;
+    align-items: center;
+}
+
+.reviewContainer .reviewColumn p{
+    margin: 0;
+}
+
+.reviewContainer .reviewColumn .reviewPadding{
+    margin-top: 0.8rem;
+}
+
+.reviewColumn img{
+    padding-bottom: 0.5rem;
+}

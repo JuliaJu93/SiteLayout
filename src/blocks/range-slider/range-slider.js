@@ -30,7 +30,6 @@ let inputsRy = {
   for (let i = 0; i < thumbs.length; i++) {
   
     thumbs[i].style.width = thumbs[i].style.height = inputsRy.thumbWidth + "px";
-    console.log(inputsRy.thumbWidth + "px");
     thumbs[i].style.borderWidth = inputsRy.thumbBorderWidth + "px";
     thumbs[i].style.top = -(inputsRy.thumbWidth / 2 + inputsRy.thumbBorderWidth - inputsRy.trackHeight / 2) + "px";
     thumbs[i].style.left = (inputsRy.theValue[i] - inputsRy.minRange) * rangeK - (thumbRealWidth / 2) + "px";
@@ -38,7 +37,6 @@ let inputsRy = {
   }
   let outputs = document.querySelectorAll(".output");
   for (let i = 0; i < outputs.length; i++) {
-    console.log(thumbs[i])
     outputs[i].style.width = outputs[i].style.height = outputs[i].style.lineHeight = outputs[i].style.left = inputsRy.outputWidth + "px";
     outputs[i].style.top = -(Math.sqrt(2 * inputsRy.outputWidth * inputsRy.outputWidth) + inputsRy.thumbWidth / 2 - inputsRy.trackHeight / 2) + "px";
     outputs[i].style.left = (inputsRy.theValue[i] - inputsRy.minRange) * rangeK - inputsRy.outputWidth / 2 + "px";
@@ -65,7 +63,6 @@ let inputsRy = {
   container.addEventListener("mousemove", function(evt) {
     let mousePos = oMousePos(this, evt);
     let theValue0 = (isDragging0) ? Math.round(mousePos.x / rangeK) + inputsRy.minRange : inputsRy.theValue[0];
-    console.log(theValue0);
     let theValue1 = (isDragging1) ? Math.round(mousePos.x / rangeK) + inputsRy.minRange : inputsRy.theValue[1];
   
     if (isDragging0) {
@@ -90,17 +87,14 @@ let inputsRy = {
         outputs[1].innerHTML = "<p>" + theValue1 + '₽' + "</p>";
         slider.style.paddingRight = (inputsRy.maxRange - theValue1) * rangeK + "px";
         track.style.width = (theValue1 - theValue0) * rangeK + "px";
-  
       }
     }
   
   }, false);
-  
-  // helpers
-  
+
   function oMousePos(elmt, evt) {
     let ClientRect = elmt.getBoundingClientRect();
-    return { //objeto
+    return { 
       x: Math.round(evt.clientX - ClientRect.left),
       y: Math.round(evt.clientY - ClientRect.top)
     }

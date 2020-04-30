@@ -19,9 +19,9 @@ module.exports = {
     paths: PATHS
   },
   entry: {
-    app: PATHS.src
+    app: PATHS.src 
   },
-
+ 
  output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
@@ -99,6 +99,12 @@ module.exports = {
       hash: false,
       template: `${PATHS.src}/pages/ui-kit/form-elements/form-elements.pug`,
       filename: './form-elements.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/pages/ui-kit/cards/cards.pug`,
+      filename: './cards.html'
     }),
   
     new CopyWebpackPlugin([

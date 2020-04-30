@@ -1,10 +1,10 @@
-let button = document.getElementById('likeButton');
+let button = document.querySelector('button.like-button');
 button.onclick = likeButton;
 
 function likeButton() {
-    let number = document.getElementById('number');
-    let heartO = document.getElementById('heart-o');
-    let heart = document.getElementById('heart');
+    let number = document.querySelector('p.styleNumber');
+    let heartO = document.querySelector('i.fa.fa-heart-o');
+    let heart = document.querySelector('i.fa.fa-heart');
     if (this.classList.contains('like-button_state_passive')){
         number.textContent++
         button.classList.remove('like-button_state_passive');

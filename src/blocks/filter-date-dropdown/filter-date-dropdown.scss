@@ -1,0 +1,17 @@
+.blockFilterDropdownMain{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $ColorOfInactiveElements;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.blockFilterDropdownList{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0;
+    width: 90%;
+}

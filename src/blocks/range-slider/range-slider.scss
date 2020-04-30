@@ -1,2 +1,53 @@
+.containerSlider {
+    position: relative;
+}
 
+.sliderRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliderPrice{
+    display: flex;
+    flex-direction: row;
+    padding: 0 6rem 0 2rem;
+}
+
+p.sliderHyphen{
+    padding: 0 0.3rem 0 1rem;
+}
+
+.slider {
+    pointer-events: none;
+    margin: 0px;
+    cursor: pointer;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid $ColorOfInactiveElements;
+    border-radius: 10px;
+    height: 40px;
+    
+}
   
+.slider.focusable {
+    border: 1px solid #ffffff
+}
+  
+.thumb {
+    cursor: pointer;
+    border-color: #ffffff;
+    border-style: solid;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 50%;
+    position: absolute;
+}
+  
+.track {
+    pointer-events: none;
+    height: 100%;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}

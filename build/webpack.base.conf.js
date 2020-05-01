@@ -19,7 +19,9 @@ module.exports = {
     paths: PATHS
   },
   entry: {
-    app: PATHS.src 
+    app: PATHS.src,
+    'elements': path.join(__dirname,'../src/pages/ui-kit/form-elements/form-elements.js'),
+    'cards': path.join(__dirname,'../src/pages/ui-kit/cards/cards.js')
   },
  
  output: {
@@ -90,6 +92,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      chunks: ['app'],
       hash: false,
       template: `${PATHS.src}/pages/ui-kit/colors&type/colors&type.pug`,
       filename: './colors&type.html'
@@ -102,6 +105,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      chunks: ['app', 'cards'],
       hash: false,
       template: `${PATHS.src}/pages/ui-kit/cards/cards.pug`,
       filename: './cards.html'
@@ -114,6 +118,7 @@ module.exports = {
     ]),
 
     ...PAGES.map(page => new HtmlWebpackPlugin({
+      chunks: ['app'],
       template: `${PAGES_DIR}/${page}`,
       filename: `./${page.replace(/\.pug/,'.html')}`
     }))

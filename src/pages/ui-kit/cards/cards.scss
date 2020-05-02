@@ -1,9 +1,38 @@
 @import "../../../layout/colors&fonts.scss";
 @import "../../../layout/fontawesome-webfont/font-awesome.scss";
+@import "../../../blocks/search-rooms/search-rooms.scss";
+@import "../../../blocks/room-rate/room-rate.scss";
+@import "../../../blocks/calendar/calendar.scss";
+@import "../../../blocks/account-registration/account-registration.scss";
+@import "../../../blocks/log-in/log-in.scss";
+@import "../../../blocks/room/room.scss";
+
+.containerCards{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 8.6rem 3rem 8.8rem;
+    justify-content: space-between;
+}
 
 .columnCards {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    padding: 2rem;
+    width: 32.7%;
+}
+
+.columnCards:last-child{
+    width: 27.6%;
+}
+
+
+.cards{
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.cardsContent{
+    padding: 1.3rem 1.8rem;
 }

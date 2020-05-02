@@ -15,9 +15,10 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
     font-weight: bold;
     color: $MainColor;
 } 
+
 .heading_type_h1{
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.63rem;
+    line-height: 1.9rem;
 }
 
 .heading_type_h2{
@@ -29,6 +30,7 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
     font-family: $AdditionalFont;
     font-size: 0.9rem;
     line-height: 1.5rem;
+    margin: 0;
 }
 
 .heading_type_h3Light{

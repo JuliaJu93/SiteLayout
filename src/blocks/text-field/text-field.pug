@@ -1,6 +1,3 @@
-mixin blockInput(label, id, type, placeholder, explanation)
+mixin textField(type, placeholder)
     .blockInput
-        .blockInput__textAboveInput
-            label.heading.heading_type_h3(for=id)=label
-            p.heading.heading_type_h3Light=explanation
-        Input.body.blockInput__Input(type=type, id=id, placeholder=placeholder)
+        Input.body.blockInput__Input(type=type, placeholder=placeholder)

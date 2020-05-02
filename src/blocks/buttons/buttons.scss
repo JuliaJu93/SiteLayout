@@ -3,7 +3,6 @@
     height: 2.7rem;
     border-radius: 2rem;
     border: none;
-    margin-right: 1rem;
     width: 100%;
 }
 
@@ -29,16 +28,10 @@
 
 .module-border-wrap {
     width:29%;
-    padding: 1rem;
-    margin-right: 1rem;
     position: relative;
     background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
     padding: 2px;
     border-radius: 2rem;
-}
-
-.borderDull{
-    opacity: 0.5;
 }
 
 .button_border_withBorder{

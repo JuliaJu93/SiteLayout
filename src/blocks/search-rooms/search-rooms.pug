@@ -1,0 +1,9 @@
+h1.heading.heading_type_h1 Найдём номера под ваши пожелания
+.cardsRow
+    include ../date-dropdown/date-dropdown
+    +dateDropdown('Прибытие')
+    +dateDropdown('Выезд')
+include ../dropdown/dropdown
++dropdown('Гости')
+include ../buttons/buttons
++button('ПОДОБРАТЬ НОМЕР', 'searchRoom', 'button_color_gradient')

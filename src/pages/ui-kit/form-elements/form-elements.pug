@@ -4,13 +4,18 @@ block variables
 
     include ../../../blocks/logo/logo
         .container
-            .column    
+            .column
+                .blockContent
+                    .blockText
+                        h3.heading.heading_type_h3 TEXT FIELD    
                 include ../../../blocks/text-field/text-field
-                +blockInput('TEXT FIELD', 'email', 'email', 'Email', 'DEFAULT')
-                +blockInput('TEXT FIELD', 'hover/focus', 'text', 'This is pretty awesome', 'HOVER/FOCUS')
+                +textField('email', 'Email')
                 include ../../../blocks/dropdown/dropdown
                 +dropdown('DROPDOWN')
-                +blockInput('MASKED TEXT FIELD', 'date', 'text', 'ДД.ММ.ГГГГ', 'DEFAULT')
+                .blockContent
+                    .blockText
+                        h3.heading.heading_type_h3 MASKED TEXT FIELD
+                +textField('text', 'ДД.ММ.ГГГГ')
                 include ../../../blocks/date-dropdown/date-dropdown
                 +dateDropdown('DATE DROPDOWN')
                 include ../../../blocks/filter-date-dropdown/filter-date-dropdown
@@ -39,8 +44,8 @@ block variables
                                 h3.heading.heading_type_h3 RADIO BUTTONS
                             .blockGroup
                                 include ../../../blocks/radio-buttons/radio-buttons
-                                +radio('Men','Мужчина')
-                                +radio('Woman','Женщина')
+                                +radio('Men','Мужчина', 'radioButton')
+                                +radio('Woman','Женщина', 'radioButton')
                         .blockContent
                             .blockText
                                 h3.heading.heading_type_h3 TOGGLE
@@ -70,10 +75,8 @@ block variables
                                 +button('CLICK ME', 'blueButton', 'button_color_gradient', 'button_size_mini')
                                 +button('CLICK ME', 'dullButton', 'button_color_gradientDull', 'button_size_mini')
                             .blockButton
-                                .module-border-wrap
-                                    +button('CLICK ME', 'blueButtonDull', 'button_border_withBorder', 'button_size_mini')
-                                .module-border-wrap.borderDull
-                                    +button('CLICK ME', 'dullButton', 'button_border_withBorder', 'button_size_mini')
+                                +button('CLICK ME', 'blueButtonDull', 'button_border_withBorder', 'button_size_mini')
+                                +button('CLICK ME', 'dullButton', 'button_border_withBorder', 'button_size_mini')
                             .blockButton
                                 +link('CLICK ME', 'lightLink', '#')
                                 +link('CLICK ME', 'darkLink', '#')

@@ -1,0 +1,13 @@
+@import "../buttons/buttons";
+
+.loginRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.85rem 0 0.5rem;
+    align-items: center;
+}
+
+.loginBox{
+    margin-top: 0.8rem;
+}

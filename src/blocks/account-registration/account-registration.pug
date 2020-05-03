@@ -1,20 +1,25 @@
 h1.heading.heading_type_h1 Регистрация аккаунта
-include ../text-field/text-field
-+textField('text', 'Имя')
+.registrationContainer
+    include ../text-field/text-field
+    +textField('text', 'Имя')
 include ../text-field/text-field
 +textField('text', 'Фамилия')
-.cardsRow
+.cardsRowStart
     include ../radio-buttons/radio-buttons
     +radio('registrationRadioMan', 'Мужчина', 'registrationRadio')
     +radio('registrationRadioWoman', 'Женщина', 'registrationRadio')
-h3.heading.heading_type_h3 Дата рождения
-+textField('text', 'ДД.ММ.ГГГГ')
-h3.heading.heading_type_h3 Данные для входа в сервис
-+textField('text', 'Email')
-+textField('text', 'Пароль')
-include ../toggle/toggle
+.registrationBox
+    h3.heading.heading_type_h3 ДАТА РОЖДЕНИЯ
+    +textField('text', 'ДД.ММ.ГГГГ')
+.registrationBox
+    h3.heading.heading_type_h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
+    +textField('text', 'Email')
+.registrationBox
+    +textField('text', 'Пароль')
+.cardsRowStart
+    include ../toggle/toggle
 include ../buttons/buttons
 +button('ПЕРЕЙТИ К ОПЛАТЕ', 'registrationButton', 'button_color_gradient')
-.cardsRow
-    p.registrationText Уже есть аккаунт на Toxin
+.registrationRow
+    p.heading.heading_type_h3.heading_size_14.heading_weight_normal Уже есть аккаунт на Toxin
     +button('ВОЙТИ', 'registrationButtonTwo', 'button_border_withBorder','button_size_mini')

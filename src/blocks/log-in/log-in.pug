@@ -1,0 +1,10 @@
+h1.heading.heading_size_14 ВОЙТИ
+.loginBox
+    +textField('text', 'Email')
+.loginBox 
+    +textField('text', 'Пароль')
+include ../buttons/buttons
++button('ВОЙТИ', 'searchRoom', 'button_color_gradient')
+.loginRow
+    p.heading.heading_type_h3.heading_size_14.heading_weight_normal Уже есть аккаунт на Toxin
+    +button('СОЗДАТЬ', 'registrationButtonTwo', 'button_border_withBorder','button_size_mini')

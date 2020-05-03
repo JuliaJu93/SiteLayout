@@ -3,6 +3,10 @@
     -webkit-tap-highlight-color:transparent;
 }
 
+#toggleP{
+    margin: 0 0 0.2rem -0.25rem;
+}
+
 *:focus{
     outline: none;
 }
@@ -11,17 +15,18 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
+    padding: 1.1rem 0 1.7rem;
 }
 
-.heading.heading_type_h3Light{
+.BlockGroupRadio .heading.heading_type_h3Light{
     margin: 0.6rem;
 }
 
 .buttonToggle{
     position: relative;
     top: 50%;
-    width: 40px;
-    height: 20px;
+    width: 38px;
+    height: 17px;
     margin: -12px 1rem 0 0;
     overflow: hidden;
 }
@@ -59,16 +64,16 @@
 #button-1 .knobs:before{
     content: '';
     position: absolute;
-    top: 1px;
+    top: 2px;
     left: 3px;
-    width: 8px;
+    width: 4px;
     height: 0;
     color: #fff;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
     line-height: 1;
-    padding: 9px 4px;
+    padding: 6px 4px;
     background: $ColorOfInactiveElements;
     border-radius: 50%;
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
@@ -76,11 +81,10 @@
 
 #button-1 .checkboxToggle:checked + .knobs:before{
     content: '';
-    left: 22px;
+    left: 24px;
     background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
 }
 
 #button-1 .knobs, #button-1 .knobs:before, #button-1 .layer{
     transition: 0.3s ease all;
 }
-

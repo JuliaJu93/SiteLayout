@@ -3,20 +3,28 @@
 @import "../toggle/toggle";
 @import "../buttons/buttons";
 
-.cardsRow{
+.registrationRow{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 1.85rem 0 0.5rem;
+    align-items: center;
 }
 
-.registrationText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+.cardsRowStart{
     display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.registrationContainer{
+    margin-bottom: 0.9rem;
+}
+
+.registrationBox{
+    margin-top: 0.8rem;
+}
+
+.cardsRowStart+.registrationBox+.registrationBox{
+    margin-top: 1.2rem;
 }

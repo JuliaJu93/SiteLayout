@@ -1,5 +1,25 @@
 .cardsRow
-    h1.heading.heading_type_h1 №888
+    .cardsRow
+        h1.heading.heading_size_14 № 888
+        h2.heading.heading_type_h3.heading_color_purple ЛЮКС
+    h3.heading.heading_type_h3.heading_size_14.heading_color_50 9 990₽ в сутки
 .cardsRow
+    include ../date-dropdown/date-dropdown
+    +dateDropdown('ПРИБЫТИЕ') 
+    +dateDropdown('ВЫЕЗД')
+include ../dropdown/dropdown
++dropdown('ГОСТИ')
 .cardsRow
+    p.bodyText.heading_size_14 9 990₽ х 4 суток
+    p.bodyText.heading_size_14 39 960₽
 .cardsRow
+    p.bodyText.heading_size_14 Сбор за услуги: скидка 2 179₽
+    p.bodyText.heading_size_14 0₽
+.cardsRow
+    p.bodyText.heading_size_14 Сбор за дополнительные услуги
+    p.bodyText.heading_size_14 300₽
+.cardsRow
+    h2.heading.headind_type_h2 ИТОГО 
+    h2.heading.headind_type_h2 38 081₽
+include ../buttons/buttons
++button('ЗАБРОНИРОВАТЬ', 'searchRoom', 'button_color_gradient')

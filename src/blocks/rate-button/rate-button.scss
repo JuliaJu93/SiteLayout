@@ -1,11 +1,7 @@
-.blockStar{
-    display: flex;
-    flex-direction: row;
-}
-
-.blockStar i{
+.rateStar{
     padding-right: 0.7rem;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     background-clip: text;
-	color: transparent;
+    color: transparent;
+    width: 1rem;
 }

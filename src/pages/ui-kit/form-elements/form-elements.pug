@@ -63,7 +63,13 @@ block variables
                         .blockContent
                             .blockText
                                 h3.heading.heading_type_h3 RATE BUTTON
-                            include ../../../blocks/rate-button/rate-button   
+                            .blockGroup    
+                                include ../../../blocks/rate-button/rate-button
+                                +rateButton('fa-star')
+                                +rateButton('fa-star')
+                                +rateButton('fa-star')
+                                +rateButton('fa-star')
+                                +rateButton('fa-star-o')               
                     .column
                         include ../../../blocks/range-slider/range-slider
                         +slider('RANGE SLIDER')

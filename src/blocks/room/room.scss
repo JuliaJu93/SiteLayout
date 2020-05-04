@@ -1,0 +1,65 @@
+@import "../rate-button/rate-button.scss";
+
+.cardsContent{
+    padding: 1.3rem 1.8rem 1.3rem 1.8rem;
+}
+
+.imgContainer{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+}
+
+.arrowContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: absolute;
+    width: 18rem;
+    bottom: 5rem;
+}
+
+.circleContainer{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 0.7rem;
+    width: 3.5rem;
+    bottom: 0.7rem;
+    right: 0.7rem;
+}
+
+.imgRoom{
+    width: 100%;
+}
+
+.roomRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roomStarContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.roomRow_indentation_upMini {
+    margin: 1.2rem 0;
+}
+
+.roomDown{
+    margin: 0.45rem 0 0;
+}
+
+.roomNumberText{
+    margin: 0 0.35rem;
+    font-size: 1.5rem;
+}
+
+.roomNumberTextNumber{
+    font-size: 1rem;  
+}

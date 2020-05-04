@@ -1,0 +1,34 @@
+mixin room (img, number, luxury, rub, review)
+    img.imgRoom(src=img)
+    .imgContainer
+        .arrowContainer
+            i.fa.fa-chevron-left(aria-hidden="true")
+            i.fa.fa-chevron-right(aria-hidden="true")
+        .circleContainer
+            i.fa.fa-circle(aria-hidden="true")
+            i.fa.fa-circle-o(aria-hidden="true")
+            i.fa.fa-circle-o(aria-hidden="true")
+            i.fa.fa-circle-o(aria-hidden="true")
+    .cardsContent
+        .roomRow
+            .roomRow.roomRow_indentation_upMini
+                h1.heading.roomNumberTextNumber.down №
+                h1.heading.roomNumberText=number
+                h2.heading.heading_type_h3.heading_color_purple.down=luxury
+            .roomRow.roomDown
+                h3.heading.heading_type_h3.heading_size_14.heading_color_50=rub
+                h3.heading.heading_type_h3.heading_size_14.heading_color_50.heading_weight_normal в сутки
+        .roomRow
+            .roomStarContainer
+                include ../rate-button/rate-button
+                +rateButton('fa-star')
+                +rateButton('fa-star')
+                +rateButton('fa-star')
+                +rateButton('fa-star')
+                if luxury 
+                    +rateButton('fa-star')
+                else
+                    +rateButton('fa-star-o')
+            .roomRow
+                h3.heading.heading_type_h3.heading_size_14.heading_color_50=review
+                h3.heading.heading_type_h3.heading_size_14.heading_color_50.heading_weight_normal Отзывов

@@ -1,25 +1,34 @@
-.cardsRow
-    .cardsRow
-        h1.heading.heading_size_14 № 888
-        h2.heading.heading_type_h3.heading_color_purple ЛЮКС
-    h3.heading.heading_type_h3.heading_size_14.heading_color_50 9 990₽ в сутки
-.cardsRow
+.rateRow
+    .rateRow.rateRow_indentation_upMini
+        h1.heading.numberTextNumber.down №
+        h1.heading.numberText 888
+        h2.heading.heading_type_h3.heading_color_purple.down ЛЮКС
+    .rateRow.down
+        h3.heading.heading_type_h3.heading_size_14.heading_color_50 9 990₽
+        h3.heading.heading_type_h3.heading_size_14.heading_color_50.heading_weight_normal в сутки
+.rateRow
     include ../date-dropdown/date-dropdown
     +dateDropdown('ПРИБЫТИЕ') 
     +dateDropdown('ВЫЕЗД')
-include ../dropdown/dropdown
-+dropdown('ГОСТИ')
-.cardsRow
-    p.bodyText.heading_size_14 9 990₽ х 4 суток
+.reteContainer
+    include ../dropdown/dropdown
+    +dropdown('ГОСТИ')
+.rateRow.rateRow_indentation_down
+    p.bodyText.heading_size_14.widthBlock 9 990₽ х 4 суток
     p.bodyText.heading_size_14 39 960₽
-.cardsRow
-    p.bodyText.heading_size_14 Сбор за услуги: скидка 2 179₽
+.rateRow
+    .rateRow
+        p.bodyText.heading_size_14.widthBlock Сбор за услуги: скидка 2 179₽
+        .rateI.heading.heading_type_h3.heading_color_purple i
     p.bodyText.heading_size_14 0₽
-.cardsRow
-    p.bodyText.heading_size_14 Сбор за дополнительные услуги
+.rateRow.rateRow_indentation_down.rateRow_alignment_start
+    .rateRow
+        p.bodyText.heading_size_14.widthBlock Сбор за дополнительные услуги
+        .rateI.heading.heading_type_h3.heading_color_purple(id='i') i
     p.bodyText.heading_size_14 300₽
-.cardsRow
-    h2.heading.headind_type_h2 ИТОГО 
-    h2.heading.headind_type_h2 38 081₽
-include ../buttons/buttons
-+button('ЗАБРОНИРОВАТЬ', 'searchRoom', 'button_color_gradient')
+.rateRow
+    h2.heading.heading_type_h2 Итого 
+    h2.heading.heading_type_h2 38 081₽
+.ratebox
+    include ../buttons/buttons
+    +button('ЗАБРОНИРОВАТЬ', 'searchRoom', 'button_color_gradient')

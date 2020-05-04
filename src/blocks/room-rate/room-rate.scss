@@ -1,9 +1,69 @@
 @import "../date-dropdown/date-dropdown";
 @import "../dropdown/dropdown";
 @import "../buttons/buttons";
-.cardsRow{
+
+.rateRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.rateRow_indentation_down {
+    margin: 1.1rem 0 0.9rem;
+}
+
+.rateRow_indentation_upMini {
+    margin: 1.2rem 0;
+}
+
+.rateRow_alignment_start{
+    align-items: start;
+}
+
+.widthBlock {
+    width: 14rem;
+}
+
+p{
+    margin: 0;
+}
+#i{
+    margin-top: -1.1rem;
+}
+
+.rateRow h2.heading.heading_type_h2{
+    margin-top: 0.9rem;
+}
+
+.reteContainer{
+    margin: 1.15rem 0;
+}
+
+.ratebox{
+    margin-bottom: 0.7rem;
+}
+
+.down{
+    margin: 0.45rem 0 0;
+}
+
+.numberText{
+    margin: 0 0.35rem;
+    font-size: 1.5rem;
+}
+
+.numberTextNumber{
+    font-size: 1rem;  
+}
+
+.rateI{
+    display: flex;
+    padding-top: 1px;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid $ColorOfInactiveElements;
+    border-radius: 50%;
 }

@@ -21,7 +21,8 @@ module.exports = {
   entry: {
     app: PATHS.src,
     'elements': path.join(__dirname,'../src/pages/ui-kit/form-elements/form-elements.js'),
-    'cards': path.join(__dirname,'../src/pages/ui-kit/cards/cards.js')
+    'cards': path.join(__dirname,'../src/pages/ui-kit/cards/cards.js'),
+    'headers&footers': path.join(__dirname,'../src/pages/ui-kit/headers&footers/headers&footers.js')
   },
  
  output: {
@@ -113,7 +114,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      chunks: ['app'],
+      chunks: ['app', 'headers&footers'],
       hash: false,
       template: `${PATHS.src}/pages/ui-kit/headers&footers/headers&footers.pug`,
       filename: './headers&footers.html'

@@ -99,6 +99,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      chunks: ['app', 'form-elements'],
       hash: false,
       template: `${PATHS.src}/pages/ui-kit/form-elements/form-elements.pug`,
       filename: './form-elements.html'

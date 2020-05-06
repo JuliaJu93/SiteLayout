@@ -1,7 +1,7 @@
 @import "../rate-button/rate-button.scss";
 
-.cardsContent{
-    padding: 1.3rem 1.8rem 1.3rem 1.8rem;
+.cardsContentRoom{
+    padding: 0 1rem 1rem 1.3rem;
 }
 
 .imgContainer{
@@ -17,18 +17,18 @@
     justify-content: space-between;
     padding: 0 1rem;
     position: absolute;
-    width: 18rem;
-    bottom: 5rem;
+    width: 15rem;
+    bottom: 4.3rem;
 }
 
 .circleContainer{
     display: flex;
     justify-content: space-around;
     position: absolute;
-    font-size: 0.7rem;
-    width: 3.5rem;
-    bottom: 0.7rem;
-    right: 0.7rem;
+    font-size: 0.55rem;
+    width: 2.9rem;
+    bottom: 0.9rem;
+    right: 0.9rem;
 }
 
 .imgRoom{

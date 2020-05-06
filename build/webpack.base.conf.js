@@ -99,7 +99,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      chunks: ['app', 'form-elements'],
+      chunks: ['app', 'elements'],
       hash: false,
       template: `${PATHS.src}/pages/ui-kit/form-elements/form-elements.pug`,
       filename: './form-elements.html'
@@ -110,6 +110,13 @@ module.exports = {
       hash: false,
       template: `${PATHS.src}/pages/ui-kit/cards/cards.pug`,
       filename: './cards.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      chunks: ['app'],
+      hash: false,
+      template: `${PATHS.src}/pages/ui-kit/headers&footers/headers&footers.pug`,
+      filename: './headers&footers.html'
     }),
   
     new CopyWebpackPlugin([

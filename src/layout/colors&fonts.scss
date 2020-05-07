@@ -28,7 +28,7 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
 
 .heading_type_h3{
     font-family: $AdditionalFont;
-    font-size: 0.79rem;
+    font-size: 0.73rem;
     line-height: 1.36rem;
     margin: 0;
 }
@@ -41,6 +41,11 @@ $AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
 .heading_size_14{
     font-size: 0.99rem;
     line-height: 1.4rem;
+}
+
+.heading_size_14X17{
+    font-size: 0.94rem;
+    line-height: 2.9rem;
 }
 
 .heading_size_14x24{

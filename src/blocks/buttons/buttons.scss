@@ -7,8 +7,17 @@
 }
 
 .button_size_mini{
-    width:30%;
+    width: 5rem;
     padding: 0;
+}
+
+.button_width_mini{
+    width: 6.45rem;
+    padding: 0;
+}
+
+.button_height_mini{
+    height: 2rem;
 }
 
 .fa-arrow-right{
@@ -28,7 +37,7 @@
 }
 
 .module-border-wrap {
-    width:29%;
+    width: 4.7rem;
     position: relative;
     background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
     padding: 2px;

@@ -1,9 +1,9 @@
-mixin button(name,id,color,size)
+mixin button(name,id,color,size,height)
     if color==='button_border_withBorder'
         .module-border-wrap
-            button.heading.heading_type_h3.button(class=color, class=size, id=id)=name
+            button.heading.heading_type_h3.button(class=color, class=size, class=height, id=id)=name
     if color==='button_color_gradient'||color==='button_color_gradientDull'
-        button.heading.heading_type_h3.button(class=color, class=size, id=id)=name
+        button.heading.heading_type_h3.button(class=color, class=size, class=height, id=id)=name
             if !size
                 i.fa.fa-arrow-right.fa-lg(aria-hidden="true")
 

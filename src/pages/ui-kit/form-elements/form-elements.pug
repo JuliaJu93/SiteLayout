@@ -20,8 +20,11 @@ block variables
                 +dateDropdown('DATE DROPDOWN')
                 include ../../../blocks/filter-date-dropdown/filter-date-dropdown
                 +filterDateDropdown('FILTER DATE DROPDOWN')
+                .blockContent
+                    .blockText
+                        h3.heading.heading_type_h3 SUBSCRIPTION TEXT FIELD
                 include ../../../blocks/subscription-text-field/subscription-text-field
-                +subscription('SUBSCRIPTION TEXT FIELD', 'subscription', 'email', 'Email')
+                +subscription('email', 'Email')
                 include ../../../blocks/dropdown-room/dropdown-room
                 +dropdownRoom('DROPDOWN')
                 include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list

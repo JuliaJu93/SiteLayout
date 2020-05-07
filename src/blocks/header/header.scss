@@ -1,11 +1,64 @@
 @import "../toxin/toxin.scss";
+@import "../buttons/buttons.scss";
 
 .containerHeader{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.6rem;
+    height: 4.45rem;
+    background-color: #ffffff;
+    padding: 0 8.7rem;
 }
 
 .containerHeader ul{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+.containerNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.containerNav p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-left: 1px solid rgba(31, 32, 65, 0.1);;
+    height: 2rem;
+    width: 9rem;
+}
+
+nav{
+    width: 37.45rem;
+}
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 12.5rem;
+}
+
+.containerHeader li{
+    padding-right: 1.95rem;
+}
+
+.containerHeader li:nth-child(2){
+    padding-right: 1.54rem;
+}
+
+.containerHeader li:nth-child(4){
+    padding-right: 1.6rem;
+}
+
+.containerHeader li:last-child{
+    padding-right: 0;
 }

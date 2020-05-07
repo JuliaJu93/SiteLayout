@@ -1,0 +1,20 @@
+@import "../toxin/toxin.scss";
+@import "../subscription-text-field/subscription-text-field.scss";
+
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4.45rem;
+    background-color: #ffffff;
+    padding: 6.3rem 8.7rem;
+}
+
+.columnFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.columnFooter ul{
+    list-style-type: none;
+}

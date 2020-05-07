@@ -1,10 +1,21 @@
-.containerHeader
-    include ../toxin/toxin
-    nav 
-        ul
-            li Home
-            li About Us
-            li Services
-            li Careers
-            li News
-            li Documentation
+mixin header(buttons)
+    .containerHeader
+        include ../toxin/toxin
+        .containerNav
+            nav 
+                ul
+                    li.heading.heading_type_h3.heading_size_14x17 Home
+                    li.heading.heading_type_h3.heading_color_50.heading_size_14x17 About Us
+                    li.heading.heading_type_h3.heading_color_50.heading_size_14x17 Services
+                        i.fa.fa-angle-down.heading.heading_type_h1.heading_color_50(aria-hidden="true")
+                    li.heading.heading_type_h3.heading_color_50.heading_size_14x17 Careers
+                    li.heading.heading_type_h3.heading_color_50.heading_size_14x17 News
+                    li.heading.heading_type_h3.heading_color_50.heading_size_14x17 Documentation
+            if (!buttons)
+                p.heading.heading_type_h3.heading_color_50.heading_size_14x17 Cosmin Negoita
+            if (buttons)
+                .buttonsContainer
+                    include ../buttons/buttons
+                    +button('LOGIN', 'register', 'button_border_withBorder', 'button_size_mini', 'button_height_mini')
+                    +button('REGISTER', 'login', 'button_color_gradient', 'button_width_mini', 'button_height_mini')
+    

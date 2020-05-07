@@ -1,5 +1,4 @@
-mixin subscription(label, id, type, placeholder)
+mixin subscription(type, placeholder)
     .blockSubscription
-        label.heading.heading_type_h3(for=id)=label
         i.fa.fa-arrow-right.subscription(aria-hidden="true")
-        Input.body.blockInput__Input(type=type, id=id, placeholder=placeholder) 
+        Input.body.blockInput__InputSubscription(type=type,  placeholder=placeholder) 

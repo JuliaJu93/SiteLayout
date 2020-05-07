@@ -1,8 +1,7 @@
 .blockSubscription{
     display: flex;
     flex-direction: column;
-    padding: 2rem 0 1rem;
-    width: 70%;
+    width: 18rem;
     position: relative;
 }
 
@@ -11,17 +10,18 @@ i.fa.fa-arrow-right.subscription{
     background-clip: text;
     color: transparent;
     position: absolute;
-    left: 92%;
-    top: 60%;
+    left: 100%;
+    top: 30%;
     font-size: 18px;
 }
 
-.blockInput__Input{
+.blockInput__InputSubscription{
     margin: 0.3rem 0 0.3rem;
     border: 1px solid $ColorOfInactiveElements;
     border-radius: 0.3rem;
     height: 2.2rem;
     padding: 0.5rem;
+    width: 19.5rem;
 }
 
 input::-webkit-input-placeholder { 

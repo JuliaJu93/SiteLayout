@@ -1,20 +1,76 @@
 @import "../toxin/toxin.scss";
 @import "../subscription-text-field/subscription-text-field.scss";
+@import "../contacts/contacts.scss";
 
 .containerFooter{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 4.45rem;
+    flex-direction: column;
     background-color: #ffffff;
-    padding: 6.3rem 8.7rem;
+    padding: 6.3rem 8.7rem 0;
+    justify-content: space-around;
 }
+
+.containerFooter_center{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 8.7rem 8.7rem 7rem;
+}
+
+.columnFooter_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.columnFooter_center p{
+    margin: 1rem 0 1.85rem;
+    text-align: center;
+}
+
+.containrImgFooter{
+   margin-left: -1.5rem;
+}
+
 
 .columnFooter{
     display: flex;
     flex-direction: column;
+    width: 19.5%;
+}
+
+.rowFooter{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6.8rem;
+}
+
+.rowFooter:nth-child(2){
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(31, 32, 65, 0.1);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.columnFooter:first-child, .columnFooter:last-child{
+    width: 25%;
 }
 
 .columnFooter ul{
     list-style-type: none;
+    margin: 0;
+}
+
+.columnFooter li:first-child, #text{
+   margin-bottom: 0.8rem;
+}
+
+.containerFooter p.bodyText{
+    margin-top: 1.1rem;
+}
+
+.rowFooter p.bodyText{
+    margin: 0;
 }

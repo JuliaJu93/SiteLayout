@@ -22,7 +22,8 @@ module.exports = {
     app: PATHS.src,
     'elements': path.join(__dirname,'../src/pages/ui-kit/form-elements/form-elements.js'),
     'cards': path.join(__dirname,'../src/pages/ui-kit/cards/cards.js'),
-    'headers&footers': path.join(__dirname,'../src/pages/ui-kit/headers&footers/headers&footers.js')
+    'headers&footers': path.join(__dirname,'../src/pages/ui-kit/headers&footers/headers&footers.js'),
+    'landing-pages': path.join(__dirname,'../src/pages/website-pages/landing-pages/landing-pages.js')
   },
  
  output: {
@@ -118,6 +119,13 @@ module.exports = {
       hash: false,
       template: `${PATHS.src}/pages/ui-kit/headers&footers/headers&footers.pug`,
       filename: './headers&footers.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      chunks: ['app', 'landing-pages'],
+      hash: false,
+      template: `${PATHS.src}/pages/website-pages/landing-pages/landing-pages.pug`,
+      filename: './landing-pages.html'
     }),
   
     new CopyWebpackPlugin([

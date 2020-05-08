@@ -5,26 +5,14 @@ block variables
     include ../../../blocks/logo/logo
         .containerCards
             .columnCards
-                .cards
-                    .cardsContent
-                        include ../../../blocks/search-rooms/search-rooms
-                .cards
-                    .cardsContent
-                        include ../../../blocks/account-registration/account-registration
+                include ../../../blocks/search-rooms/search-rooms
+                include ../../../blocks/account-registration/account-registration
             .columnCards
-                .cards
-                    .cardsContent
-                        include ../../../blocks/room-rate/room-rate
-                .cards
-                    .cardsContent
-                        include ../../../blocks/log-in/log-in
+                include ../../../blocks/room-rate/room-rate
+                include ../../../blocks/log-in/log-in
             .columnCards
-                .cards
-                    .cardsContent
-                        include ../../../blocks/calendar/calendar
-                .cards.cards_size_mini
-                    include ../../../blocks/room/room
-                    +room('/img/rooms/room888.jpg', '888', 'ЛЮКС', '9 990₽', '145')
-                .cards.cards_size_mini
-                    include ../../../blocks/room/room
-                    +room('/img/rooms/room840.jpg', '840', '', '9 900₽', '65')
+                include ../../../blocks/calendar/calendar
+                include ../../../blocks/room/room
+                +room('/img/rooms/room888.jpg', '888', 'ЛЮКС', '9 990₽', '145')
+                include ../../../blocks/room/room
+                +room('/img/rooms/room840.jpg', '840', '', '9 900₽', '65')

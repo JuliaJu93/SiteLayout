@@ -1,11 +1,12 @@
-h1.heading.heading_type_h1 Найдём номера под ваши пожелания
-.cardsRow
-    include ../date-dropdown/date-dropdown
-    +dateDropdown('ПРИБЫТИЕ')
-    +dateDropdown('ВЫЕЗД')
-.cardscontainer   
-    include ../dropdown/dropdown
-    +dropdown('ГОСТИ')
-.cardscontainer 
-    include ../buttons/buttons
-    +button('ПОДОБРАТЬ НОМЕР', 'searchRoom', 'button_color_gradient')
+.cards
+    h1.heading.heading_type_h1 Найдём номера под ваши пожелания
+    .cardsRow
+        include ../date-dropdown/date-dropdown
+        +dateDropdown('ПРИБЫТИЕ')
+        +dateDropdown('ВЫЕЗД')
+    .cardscontainer   
+        include ../dropdown/dropdown
+        +dropdown('ГОСТИ')
+    .cardscontainer 
+        include ../buttons/buttons
+        +button('ПОДОБРАТЬ НОМЕР', 'searchRoom', 'button_color_gradient')

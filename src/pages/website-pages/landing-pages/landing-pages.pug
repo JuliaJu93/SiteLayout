@@ -1,0 +1,12 @@
+extends ../../../layout/main 
+block variables
+    - var title = 'Landing pages';
+    .containerLanding
+        include ../../../blocks/header/header
+        +header('buttons', 'О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения', '', 'ВОЙТИ', 'РЕГИСТРАЦИЯ')
+        .containerImg
+            include ../../../blocks/search-rooms/search-rooms
+            .containerHide
+                include ../../../blocks/calendar/calendar
+        include ../../../blocks/footer/footer
+        +footer('max')

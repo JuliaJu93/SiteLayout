@@ -1,0 +1,23 @@
+@import "../../../layout/colors&fonts.scss";
+@import "../../../layout/fontawesome-webfont/font-awesome.scss";
+@import "../../../blocks/buttons/buttons.scss";
+
+.containerLanding{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerHide{
+    position: absolute;
+    top: 16.2rem;
+    left: 10.7rem;
+}
+
+.containerImg{
+    margin-top: -1px;
+    width: 100%;
+    position: relative;
+    height: 43.2rem;
+    padding: 4.3rem 8.8rem;
+    background-image: url('/img/image 3.jpg');
+}

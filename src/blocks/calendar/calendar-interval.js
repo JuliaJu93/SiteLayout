@@ -1,10 +1,11 @@
 let date = document.querySelectorAll('td');
+let clear = document.querySelector('div.blockcalendarList p:first-child');
 
 function CreateDiv(){
     return document.createElement('div');
 }
 
-for (var i = 0; i < date.length; i++){
+for (var i = 11; i < date.length; i++){
     date[i].onclick = DatePicker;
 }
 
@@ -21,8 +22,19 @@ function DatePicker(e){
     }
 }
 
+function ThisDay (){
+    for (let i = 0; i < date.length; i++){
+        if (date[i].innerText === '8'){
+            date[i].classList.add('calendarCircle'); 
+            date[i].classList.add('calendarCircle_color_green'); 
+        }
+    }
+}
+
+ThisDay ();
+
 function ColoringInterval(){
-    let interval = document.querySelectorAll('.calendarCircle');
+    let interval = document.querySelectorAll('.calendarCircle_color_purple');
     let parentOne = interval[0].parentNode;
     let parentTwo = interval[1].parentNode;
     let tdOne = parentOne.childNodes;
@@ -83,3 +95,22 @@ function ColoringInterval(){
     }
 }
 
+clear.onclick = Clear;
+
+function Clear(){
+    let div = document.querySelectorAll('td div.colorDiv');
+    for (let i = 11; i < date.length; i++){
+        if (date[i].classList.contains('calendarCircle')){
+            date[i].classList.remove('calendarCircle'); 
+        }
+        if (date[i].classList.contains('calendarCircle_color_purple')){
+            date[i].classList.remove('calendarCircle_color_purple'); 
+        }
+        if (date[i].classList.contains('intervalColor')){
+            date[i].classList.remove('intervalColor'); 
+        }
+    }
+    div[0].parentNode.removeChild(div[0]);
+    div[1].parentNode.removeChild(div[1]);
+    counterDatePicker = 0;
+}

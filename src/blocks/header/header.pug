@@ -1,4 +1,4 @@
-mixin header(buttons, oneLi, twoLi, threeLi, fourLi, fifeLi, sixLi, buttonOne, buttonTwo)
+mixin header(buttons, oneLi, twoLi, threeLi, fourLi, fifeLi, sixLi, buttonOne, buttonTwo, buttonSize)
     .containerHeader
         include ../toxin/toxin
         +toxin()
@@ -18,5 +18,5 @@ mixin header(buttons, oneLi, twoLi, threeLi, fourLi, fifeLi, sixLi, buttonOne, b
                 .buttonsContainer
                     include ../buttons/buttons
                     +button(buttonOne, 'register', 'button_border_withBorder', 'button_size_mini', 'button_height_mini')
-                    +button(buttonTwo, 'login', 'button_color_gradient', 'button_width_mini', 'button_height_mini')
+                    +button(buttonTwo, 'login', 'button_color_gradient', buttonSize)
     

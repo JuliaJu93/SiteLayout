@@ -1,5 +1,5 @@
 .button{
-    height: 2.7rem;
+    height: 2.15rem;
     border-radius: 2rem;
     border: none;
     width: 100%;
@@ -7,7 +7,12 @@
 }
 
 .button_size_mini{
-    width: 5rem;
+    width: 100%;
+    padding: 0;
+}
+
+.button_size_long{
+    width: 12.25rem;
     padding: 0;
 }
 
@@ -17,7 +22,7 @@
 }
 
 .button_height_mini{
-    height: 2rem;
+    height: 1.86rem;
 }
 
 .fa-arrow-right{
@@ -37,7 +42,8 @@
 }
 
 .module-border-wrap {
-    width: 4.7rem;
+    width: 5.1rem;
+    height: 1.86rem;
     position: relative;
     background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
     padding: 2px;

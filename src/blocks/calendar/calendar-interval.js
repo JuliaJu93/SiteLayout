@@ -1,5 +1,6 @@
 let date = document.querySelectorAll('td');
 let clear = document.querySelector('div.blockcalendarList p:first-child');
+let calendar = document.querySelector('.containerHide');
 
 function CreateDiv(){
     return document.createElement('div');
@@ -97,8 +98,10 @@ function ColoringInterval(){
 
 clear.onclick = Clear;
 
-function Clear(){
+export function Clear(){
     let div = document.querySelectorAll('td div.colorDiv');
+    let tr = document.querySelectorAll('tr');
+    let result = document.querySelectorAll('.cardsRow div.blockDateDropdownList p');
     for (let i = 11; i < date.length; i++){
         if (date[i].classList.contains('calendarCircle')){
             date[i].classList.remove('calendarCircle'); 
@@ -110,7 +113,17 @@ function Clear(){
             date[i].classList.remove('intervalColor'); 
         }
     }
+    for (let i = 0; i < 6; i++){
+        if (tr[i].classList.contains('intervalColor')){
+            tr[i].classList.remove('intervalColor'); 
+        }
+    }
+    counterDatePicker = 0;
     div[0].parentNode.removeChild(div[0]);
     div[1].parentNode.removeChild(div[1]);
-    counterDatePicker = 0;
+    if (!calendar.classList.contain('containerHide_type_hide')){
+        result[0].innerText = `ДД.ММ.ГГГГ`;
+        result[1].innerText = `ДД.ММ.ГГГГ`;
+    }
 }
+

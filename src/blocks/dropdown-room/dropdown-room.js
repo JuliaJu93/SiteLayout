@@ -1,10 +1,10 @@
-let rooms = document.getElementById('rooms');
-let arrowDownRoom = document.getElementById('arrowRoom');
-let listRoom = document.getElementById ('dropdownRoomHide');
-let containerRoom = document.getElementById ('containerRoom');
-let resultRoom = document.querySelectorAll('.blockDropdownRoomMain .pCounter');
-let minusRoom = document.querySelectorAll('.blockDropdownRoomMain button.buttonMinus');
-let plusRoom = document.querySelectorAll('.blockDropdownRoomMain button.buttonPlus');
+let rooms = document.querySelector('.blockDropdownRoomMain .blockRoomList p');
+let arrowDownRoom = document.querySelector('.blockDropdownRoomMain .blockRoomList i');
+let listRoom = document.querySelector ('.containerDropdownRoom .blockDropdownAdditional.dropdownHide');
+let containerRoom = document.querySelector ('.blockDropdownRoomMain .blockRoomList');
+let resultRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownAdditional.dropdownHide .pCounter');
+let minusRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownAdditional.dropdownHide button.buttonMinus');
+let plusRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownAdditional.dropdownHide button.buttonPlus');
 
 arrowDownRoom.onclick = OpenListRoom;
 minusRoom[0].onclick = minusRoom[1].onclick = minusRoom[2].onclick = CounterMinus;
@@ -12,7 +12,6 @@ plusRoom[0].onclick = plusRoom[1].onclick = plusRoom[2].onclick = CounterPlus;
 
 function OpenListRoom() {
   listRoom.classList.toggle('dropdownHide');
-  containerRoom.classList.toggle('removeUnderline');
 }
 
 function CounterPlus (e) {

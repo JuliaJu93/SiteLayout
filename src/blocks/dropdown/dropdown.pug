@@ -1,11 +1,12 @@
 mixin dropdown (name)
     include /dropdown__counter
     h3.heading.heading_type_h3=name
-    .blockDropdownMain
-        .blockDropdownList.removeUnderline(id = 'container')
-            p.heading.heading_color_75.heading_size_14.heading_weight_normal(id = 'guestsDropdown') Сколько гостей
-            i.fa.fa-angle-down.heading.heading_type_h3(aria-hidden="true", id="arrowDown")
-        .blockDropdownAdditional.dropdownHide(id='dropdownHide')
+    .containerDropdown
+        .blockDropdownMain
+            .blockDropdownList
+                p.heading.heading_color_75.heading_size_14.heading_weight_normal Сколько гостей
+                i.fa.fa-angle-down.heading.heading_type_h3(aria-hidden="true")
+        .blockDropdownAdditional.dropdownHide
             .blockDropdownList 
                 p.heading.heading_type_h3.heading_color_75 Взрослые
                 +Counter('0', 'buttonMinus_type_inactive')
@@ -16,5 +17,5 @@ mixin dropdown (name)
                 p.heading.heading_type_h3.heading_color_75 Младенцы
                 +Counter('0', 'buttonMinus_type_inactive')
             .blockDropdownList
-                p.heading.heading_type_h3.heading_color_purple.clearHide(id = 'clear') ОЧИСТИТЬ
-                p.heading.heading_type_h3.heading_color_purple(id = 'apply') ПРИМЕНИТЬ 
+                p.heading.heading_type_h3.heading_color_purple.clearHide ОЧИСТИТЬ
+                p.heading.heading_type_h3.heading_color_purple ПРИМЕНИТЬ 

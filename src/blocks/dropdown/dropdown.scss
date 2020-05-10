@@ -1,5 +1,9 @@
 @import "./dropdown__counter.scss";
 
+.containerDropdown{
+    position: relative;
+}
+
 .blockDropdownMain{
     display: flex;
     flex-direction: column;
@@ -12,27 +16,22 @@
 }
 
 .blockDropdownList{
-    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 94%;
+    width: 19rem;
 }
 
 .blockDropdownMain > .blockDropdownList:first-child{
     border: 1px solid transparent;
-    border-color: transparent transparent $FirstColorGradient transparent;
     color: $ColorOfInactiveElements;
-}
-
-.blockDropdownMain > div.removeUnderline:first-child{
-    border-color: transparent;
 }
 
 .blockDropdownAdditional{
     background-color: #ffffff;
-    z-index: 99;
+    border: 1px solid $ColorOfInactiveElements;
+    position: absolute;
 }
 
 .blockDropdownList:last-child{

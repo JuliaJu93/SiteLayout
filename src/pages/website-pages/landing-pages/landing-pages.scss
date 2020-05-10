@@ -1,6 +1,8 @@
 @import "../../../layout/colors&fonts.scss";
 @import "../../../layout/fontawesome-webfont/font-awesome.scss";
 @import "../../../blocks/buttons/buttons.scss";
+@import "../../../blocks/dropdown/dropdown.scss";
+@import "../../../blocks/dropdown/dropdown__counter.scss";
 
 .containerLanding{
     display: flex;

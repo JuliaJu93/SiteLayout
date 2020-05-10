@@ -1,12 +1,12 @@
-let clear = document.getElementById('clear');
-let apply = document.getElementById('apply');
-let guestsDropdown = document.getElementById('guestsDropdown');
-let arrowDown = document.getElementById('arrowDown');
-let list = document.getElementById ('dropdownHide');
-let container = document.getElementById ('container');
-let result = document.querySelectorAll('.blockDropdownMain .pCounter');
-let minus = document.querySelectorAll('.blockDropdownMain button.buttonMinus');
-let plus = document.querySelectorAll('.blockDropdownMain button.buttonPlus');
+let clear = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:first-child');
+let apply = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:last-child');
+let guestsDropdown = document.querySelector('.blockDropdownList:first-child p');
+let arrowDown = document.querySelector('.blockDropdownMain .blockDropdownList i');
+let list = document.querySelector ('.dropdownHide');
+let container = document.querySelector('.blockDropdownAdditional .blockDropdownList:first-child');
+let result = document.querySelectorAll('.blockDropdownAdditional .pCounter');
+let minus = document.querySelectorAll('.blockDropdownAdditional button.buttonMinus');
+let plus = document.querySelectorAll('.blockDropdownAdditional button.buttonPlus');
 
 arrowDown.onclick = OpenList;
 apply.onclick = Result;
@@ -16,7 +16,6 @@ plus[0].onclick = plus[1].onclick = plus[2].onclick = CounterPlus;
 
 function OpenList() {
   list.classList.toggle('dropdownHide');
-  container.classList.toggle('removeUnderline');
 }
 
 function CounterPlus (e) {

@@ -1,3 +1,7 @@
+.containerDropdownRoom{
+    position: relative;
+}
+
 .blockDropdownRoomMain{
     display: flex;
     flex-direction: column;
@@ -7,7 +11,6 @@
 }
 
 .blockRoomList{
-    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,13 +21,8 @@
 
 .blockDropdownRoomMain > .blockRoomList:first-child{
     border: 1px solid transparent;
-    border-color: transparent transparent $FirstColorGradient transparent;
     color: $ColorOfInactiveElements;
     padding: 0.5rem;
-}
-
-.blockDropdownRoomMain > div.removeUnderline:first-child{
-    border-color: transparent;
 }
 
 .blockDropdownAdditional{

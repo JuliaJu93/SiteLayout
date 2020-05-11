@@ -20,32 +20,39 @@
 @import "../../../blocks/range-slider/range-slider.scss";
 @import "../../../blocks/rate-button/rate-button.scss";
 
+.containerElements{
+    display: flex;
+    flex-direction: row;
+    padding: 2.18rem 8.8rem;
+    justify-content: space-between;
+}
+
 .rowMain {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 72%;
+    justify-content: space-between;
 }
 
 .columnMain {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding: 2rem;
+    width: 45%;
 }
 
-.container>.column:first-child{
-    width: 25%;
+.columnMain  .column:first-child{
+    width: 30%;
 }
 
 .blockContent{
     display: flex;
     flex-direction: column;
-
 }
 
 .blockText{

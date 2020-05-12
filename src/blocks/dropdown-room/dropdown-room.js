@@ -1,10 +1,10 @@
-let rooms = document.querySelector('.blockDropdownRoomMain .blockRoomList p');
-let arrowDownRoom = document.querySelector('.blockDropdownRoomMain .blockRoomList i');
-let listRoom = document.querySelector ('.containerDropdownRoom .blockDropdownAdditional.dropdownHide');
+let rooms = document.querySelector('.blockDropdownRoomMain p');
+let arrowDownRoom = document.querySelector('.blockDropdownRoomMain i');
+let listRoom = document.querySelector ('.containerDropdownRoom .blockDropdownRoomAdditional.dropdownHide');
 let containerRoom = document.querySelector ('.blockDropdownRoomMain .blockRoomList');
-let resultRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownAdditional.dropdownHide .pCounter');
-let minusRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownAdditional.dropdownHide button.buttonMinus');
-let plusRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownAdditional.dropdownHide button.buttonPlus');
+let resultRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownRoomAdditional.dropdownHide .pCounter');
+let minusRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownRoomAdditional.dropdownHide button.buttonMinus');
+let plusRoom = document.querySelectorAll('.containerDropdownRoom .blockDropdownRoomAdditional.dropdownHide button.buttonPlus');
 
 arrowDownRoom.onclick = OpenListRoom;
 minusRoom[0].onclick = minusRoom[1].onclick = minusRoom[2].onclick = CounterMinus;

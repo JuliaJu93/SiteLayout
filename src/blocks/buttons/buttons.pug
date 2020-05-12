@@ -1,11 +1,11 @@
 mixin button(name,id,color,size,height)
     if color==='button_border_withBorder'
         .module-border-wrap
-            button.heading.heading_type_h3.button(class=color, class=size, class=height, id=id)=name
+            button.text.text_type_h3.button(class=color, class=size, class=height, id=id)=name
     if color==='button_color_gradient'||color==='button_color_gradientDull'
-        button.heading.heading_type_h3.button(class=color, class=size, class=height, id=id)=name
+        button.text.text_type_h3.button(class=color, class=size, class=height, id=id)=name
             if !size
                 i.fa.fa-arrow-right.fa-lg(aria-hidden="true")
 
 mixin link(text, color, link)
-    a.heading.heading_type_h3(href=link, class=color)=text
+    a.text.text_type_h3(href=link, class=color)=text

@@ -1,4 +1,4 @@
-mixin subscription(type, placeholder)
+mixin subscription(type, text)
     .blockSubscription
-        i.fa.fa-arrow-right.subscription(aria-hidden="true")
-        Input.body.blockInput__InputSubscription(type=type,  placeholder=placeholder) 
+        p.bodyText.text_color_25(type=type)=text
+        i.fa.fa-arrow-right.fa-lg.subscription(aria-hidden="true")

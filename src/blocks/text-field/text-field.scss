@@ -1,15 +1,10 @@
-.blockInput{
-    display: flex;
-    flex-direction: column;
-}
-
-.blockInput__Input{
+.containerTextField input{
     border: 1px solid $ColorOfInactiveElements;
     border-radius: 0.3rem;
-    height: 2.2rem;
-    padding: 1.1rem;
-    width: 20.1rem;
-    height: 2.7rem;
+    padding: 0.8rem;
+    margin-top: 1px;
+    width: 20rem;
+    height: 2.75rem;
 }
 
 input::-webkit-input-placeholder { 

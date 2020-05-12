@@ -22,32 +22,22 @@
 
 .containerElements{
     display: flex;
-    flex-direction: row;
-    padding: 2.18rem 8.8rem;
+    flex-direction: column;
+    padding: 2rem 8.8rem;
     justify-content: space-between;
 }
 
 .rowMain {
     display: flex;
-    flex-direction: column;
-    width: 72%;
-    justify-content: space-between;
-}
-
-.columnMain {
-    display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    width: 45%;
-}
-
-.columnMain  .column:first-child{
-    width: 30%;
+    width: 27.6%;
 }
 
 .blockContent{

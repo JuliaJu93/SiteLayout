@@ -1,21 +1,21 @@
 mixin dropdown (name)
     include /dropdown__counter
-    h3.heading.heading_type_h3=name
+    h3.text.text_type_h3=name
     .containerDropdown
         .blockDropdownMain
-            .blockDropdownList
-                p.heading.heading_color_75.heading_size_14.heading_weight_normal Сколько гостей
-                i.fa.fa-angle-down.heading.heading_type_h3(aria-hidden="true")
+            .containerDropdownList
+                p.bodyText Сколько гостей
+                i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")
         .blockDropdownAdditional.dropdownHide
             .blockDropdownList 
-                p.heading.heading_type_h3.heading_color_75 Взрослые
+                p.text.text_type_h3 Взрослые
                 +Counter('0', 'buttonMinus_type_inactive')
             .blockDropdownList
-                p.heading.heading_type_h3.heading_color_75 Дети
+                p.text.text_type_h3 Дети
                 +Counter('0', 'buttonMinus_type_inactive')
             .blockDropdownList
-                p.heading.heading_type_h3.heading_color_75 Младенцы
+                p.text.text_type_h3 Младенцы
                 +Counter('0', 'buttonMinus_type_inactive')
             .blockDropdownList
-                p.heading.heading_type_h3.heading_color_purple.clearHide ОЧИСТИТЬ
-                p.heading.heading_type_h3.heading_color_purple ПРИМЕНИТЬ 
+                p.text.text_type_h3.text_color_purple.clearHide ОЧИСТИТЬ
+                p.text.text_type_h3.text_color_purple ПРИМЕНИТЬ 

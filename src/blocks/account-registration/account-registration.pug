@@ -1,5 +1,5 @@
 .cards
-    h1.heading.heading_type_h1 Регистрация аккаунта
+    h1.text.text_type_h1 Регистрация аккаунта
     .registrationContainer
         include ../text-field/text-field
         +textField('text', 'Имя')
@@ -10,10 +10,10 @@
         +radio('registrationRadioMan', 'Мужчина', 'registrationRadio')
         +radio('registrationRadioWoman', 'Женщина', 'registrationRadio')
     .registrationBox
-        h3.heading.heading_type_h3 ДАТА РОЖДЕНИЯ
+        h3.text.text_type_h3 ДАТА РОЖДЕНИЯ
         +textField('text', 'ДД.ММ.ГГГГ')
     .registrationBox
-        h3.heading.heading_type_h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
+        h3.text.text_type_h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
         +textField('text', 'Email')
     .registrationBox
         +textField('text', 'Пароль')
@@ -22,5 +22,5 @@
     include ../buttons/buttons
     +button('ПЕРЕЙТИ К ОПЛАТЕ', 'registrationButton', 'button_color_gradient')
     .registrationRow
-        p.heading.heading_type_h3.heading_size_14.heading_weight_normal Уже есть аккаунт на Toxin
+        p.text.text_type_h3.text_size_14.text_weight_normal Уже есть аккаунт на Toxin
         +button('ВОЙТИ', 'registrationButtonTwo', 'button_border_withBorder','button_size_mini')

@@ -6,84 +6,86 @@ $ColorBorder:  rgba(31, 32, 65, 0.05);
 $FirstColorGradient: #bc9cff;
 $SecondColorGradient: #6FCF97;
 
-$MainFont: 'Quicksand-Regular', Arial, sans-serif;
-$AdditionalFont: 'Montserrat-Regular', Arial, sans-serif;
+$MainFont: 'Quicksand-Bold';
+$AdditionalFont: 'Montserrat-Bold';
+$AdditionalFontBody: 'Montserrat-Regular';
+$IconFont: 'fontawesome-webfont';
 
-.heading{
+.text{
     font-family: $MainFont;
     font-style: normal;
     font-weight: bold;
     color: $MainColor;
 } 
 
-.heading_type_h1{
+.text_type_h1{
     font-size: 1.63rem;
     line-height: 1.9rem;
 }
 
-.heading_type_h2{
+.text_type_h2{
     font-size: 1.4rem;
     line-height: 1.5rem;
 }
 
-.heading_type_h3{
+.text_type_h3{
     font-family: $AdditionalFont;
-    font-size: 0.73rem;
-    line-height: 1.36rem;
+    font-size: 0.75rem;
+    line-height: 1.39rem;
     margin: 0;
 }
 
-.heading_type_h3Light{
-    color: $ColorAdd-ons;
-    font-weight: normal;
-}
-
-.heading_size_14{
-    font-size: 0.99rem;
-    line-height: 1.4rem;
-}
-
-.heading_size_14X17{
-    font-size: 0.94rem;
-    line-height: 2rem;
-}
-
-.heading_size_14x24{
-    font-size: 0.99rem;
-    line-height: 1.6rem;
-}
-
-.heading_color_50{
-    color: $ColorAdd-ons;
-}
-
-.heading_color_75{
-    color: $AdditionalColor;
-}
-
-.heading_color_25{
-    color: $ColorOfInactiveElements;
-}
-
-.heading_color_purple{
-    color: $FirstColorGradient;
-}
-
-.heading_weight_normal{
-    font-weight: normal;
-}
-
 .bodyText{
-    font-family: $AdditionalFont;;
+    font-family: $AdditionalFontBody;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.97rem;
-    line-height: 1.55rem;
+    font-size: 0.879rem;
+    line-height: 1.6rem;
     color: $AdditionalColor;
 }
 
 .bodyText_type_mini{
     color: $ColorAdd-ons;
+    font-size: 0.7rem;
+    line-height: 1.7rem;
+}
+
+.text_size_14{
     font-size: 0.9rem;
-    line-height: 1.5rem;
+}
+
+.text_height_17{
+    line-height: 2rem;
+}
+
+.text_height_18{
+    line-height: 1rem;
+}
+
+.text_height_24{
+    line-height: 1.6rem;
+}
+
+.text_color_50{
+    color: $ColorAdd-ons;
+}
+
+.text_color_75{
+    color: $AdditionalColor;
+}
+
+.text_color_25{
+    color: $ColorOfInactiveElements;
+}
+
+.text_color_purple{
+    color: $FirstColorGradient;
+}
+
+.text_weight_normal{
+    font-family: $AdditionalFontBody;
+}
+
+.text_weight_bold{
+    font-family: $AdditionalFont;
 }

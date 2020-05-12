@@ -1,5 +1,5 @@
 .cards
-    h1.heading.heading_type_h1 Войти
+    h1.text.text_type_h1 Войти
     .loginBox
         +textField('text', 'Email')
     .loginBox.loginBox_indentation_down 
@@ -7,5 +7,5 @@
     include ../buttons/buttons
     +button('ВОЙТИ', 'searchRoom', 'button_color_gradient')
     .loginRow
-        p.heading.heading_type_h3.heading_size_14.heading_weight_normal Уже есть аккаунт на Toxin
+        p.text.text_type_h3.text_size_14.text_weight_normal Уже есть аккаунт на Toxin
         +button('СОЗДАТЬ', 'registrationButtonTwo', 'button_border_withBorder','button_size_mini')

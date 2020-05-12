@@ -1,17 +1,26 @@
-.blockContainer{
+.containerRoomInformation{
     display: flex;
     flex-direction: row;
+    padding: 0 0 1.2rem 0.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.blockForImg{
+    display: flex;
     align-items: center;
-    padding: 1.5rem 0 0.5rem 0;
-    
 }
 
 .blockForText{
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
+    margin: 0 0 0 0.8rem;
 }
 
-#p, .miniMargin{
-    margin:0.2rem;
+.blockForText h3{
+    margin: 0;
+}
+
+.blockForText p{
+    margin: 0;
 }

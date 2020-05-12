@@ -1,7 +1,16 @@
 .blockCheckbox{
     display: flex;
     flex-direction: row;
-    margin-bottom: 1rem;
+    margin: 0.8rem 0 0.1;
+    width: 15rem;
+}
+
+.blockCheckbox:nth-child(3){
+    margin-top: -0.25rem;
+}
+
+.blockCheckbox:nth-child(4){
+    margin-top: -0.7rem;
 }
 
 .checkbox{
@@ -18,13 +27,13 @@
 .checkbox+label::before {
     content: '';
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.1rem;
+    height: 1.1rem;
     flex-shrink: 0;
     flex-grow: 0;
     border: 1px solid $ColorOfInactiveElements;
-    border-radius: 0.25em;
-    margin-right: 0.5em;
+    border-radius: 0.25rem;
+    margin-right: 0.7rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;

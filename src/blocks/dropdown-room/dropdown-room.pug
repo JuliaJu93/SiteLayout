@@ -1,18 +1,17 @@
 mixin dropdownRoom (name)
     include ../dropdown/dropdown__counter
-    h3.heading.heading_type_h3=name
+    h3.text.text_type_h3=name
     .containerDropdownRoom
         .blockDropdownRoomMain
+            p.bodyText 2 спальни, 2 кровати...
+            i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")
+        .blockDropdownRoomAdditional.dropdownHide
             .blockRoomList
-                p.heading.heading_type_h3Light 2 спальни, 2 кровати...
-                i.fa.fa-angle-down.heading.heading_type_h3(aria-hidden="true")
-        .blockDropdownAdditional.dropdownHide
-            .blockRoomList
-                p.heading.heading_type_h3.heading_color_75 Спальни
+                p.text.text_type_h3.text_color_75 Спальни
                 +Counter('2')
             .blockRoomList
-                p.heading.heading_type_h3.heading_color_75 Кровати
+                p.text.text_type_h3.text_color_75 Кровати
                 +Counter('2')
             .blockRoomList
-                p.heading.heading_type_h3.heading_color_75 Ванные комнаты
+                p.text.text_type_h3.text_color_75 Ванные комнаты
                 +Counter('0', 'buttonMinus_type_inactive')

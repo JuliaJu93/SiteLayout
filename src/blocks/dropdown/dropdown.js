@@ -1,7 +1,7 @@
 let clear = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:first-child');
 let apply = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:last-child');
 let guestsDropdown = document.querySelector('.blockDropdownList:first-child p');
-let arrowDown = document.querySelector('.blockDropdownMain .blockDropdownList i');
+let arrowDown = document.querySelector('.blockDropdownMain .containerDropdownList i');
 let list = document.querySelector ('.dropdownHide');
 let container = document.querySelector('.blockDropdownAdditional .blockDropdownList:first-child');
 let result = document.querySelectorAll('.blockDropdownAdditional .pCounter');

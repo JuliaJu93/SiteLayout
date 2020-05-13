@@ -13,10 +13,10 @@ for (let j = 1; j <= 5; j++) {
     let tr = CreateLine();
     tr.id = `line${j}`;
     tr.classList.add('calendarBox');
-    tr.classList.add('heading');
-    tr.classList.add('heading_type_h3');
-    tr.classList.add('heading_color_50');
-    tr.classList.add('heading_weight_normal');
+    tr.classList.add('text');
+    tr.classList.add('text_type_h3');
+    tr.classList.add('text_color_50');
+    tr.classList.add('text_weight_normal');
     for (let i = 1; i <= 7; i++) {
         let td = CreateCell();
         let day = FillingCalendar ();
@@ -58,10 +58,10 @@ function SelectionOfDays(){
     let tdLastLine = lastLine.querySelectorAll('td');
     for (let i = 0; i < 7; i++){
         if(tdTwoLine[i].innerText > 7){
-        tdTwoLine[i].classList.add('heading_color_25');
+        tdTwoLine[i].classList.add('text_color_25');
         }
         if(tdLastLine[i].innerText < 25){
-            tdLastLine[i].classList.add('heading_color_25');
+            tdLastLine[i].classList.add('text_color_25');
         }
     }
 }

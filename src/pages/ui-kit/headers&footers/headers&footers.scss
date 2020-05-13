@@ -4,5 +4,9 @@
 @import "../../../blocks/footer/footer.scss";
 
 .containerHeaderFooter{
-    margin-top: 2.4rem;
+    margin-top: 2.5rem;
+}
+
+.containerHeaderFooter:first-child{
+    margin-top: 7.7rem;
 }

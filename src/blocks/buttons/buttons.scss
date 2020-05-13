@@ -1,44 +1,9 @@
 .button{
+    position: relative;
     height: 2.75rem;
     border-radius: 2rem;
     border: none;
-    width: 20rem;
-    padding: 0.9rem 0.9rem 0.9rem 1.65rem;
-}
-
-.button_size_mini{
-    width: 6.2rem;
-    padding: 0;
-}
-
-.button_size_long{
-    width: 12.25rem;
-    padding: 0;
-}
-
-.button_width_mini{
-    width: 6.45rem;
-    padding: 0;
-}
-
-.button_height_mini{
-    height: 1.86rem;
-}
-
-.fa-arrow-right{
-    float: right;
-}
-
-@mixin opacity ($opacity:1){
-    background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
-    color: #FFFFFF;
-    opacity: $opacity;
-}
-.button_color_gradient{
-    @include opacity()
-}
-.button_color_gradientDull{
-    @include opacity(0.5)
+    width: 100%;
 }
 
 .module-border-wrap {
@@ -54,8 +19,43 @@
     background: rgb(250,250,250);
     color: $FirstColorGradient;
     width: 100%;
-    height: 2.5rem;
+    height: 100%;
     opacity: 1;
+}
+
+
+.button_size_mini{
+    width: 6rem;
+}
+
+.button_header_login{
+    margin-top: 0.2rem;
+    height: 1.9rem;
+    width: 4.7rem;
+}
+
+.button_header_register{
+    margin-top: 0.2rem;
+    height: 2.1rem;
+    width: 6.3rem;
+}
+
+button i.fa-arrow-right{
+    position: absolute;
+    right: 2%;
+    top: 35%;
+}
+
+@mixin opacity ($opacity:1){
+    background: linear-gradient(180deg, $FirstColorGradient 0%, $SecondColorGradient 100%);
+    color: #FFFFFF;
+    opacity: $opacity;
+}
+.button_color_gradient{
+    @include opacity()
+}
+.button_color_gradientDull{
+    @include opacity(0.5)
 }
 
 @mixin colorLink ($color){

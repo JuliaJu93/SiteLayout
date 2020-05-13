@@ -5,12 +5,13 @@
     border-radius: 4px;
     margin-bottom: 2.5rem;
     padding: 1.3rem 1.8rem 1.3rem 1.8rem;
+    position: relative;
+    z-index: 99;
 }
 
 .cardsMini_shadow_shadow{
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
-
 
 .calendarContainer{
     margin: -1.4rem -0.5rem 0 -0.2rem;
@@ -23,7 +24,7 @@
 .tableCalendar{
     display: flex;
     flex-direction: column;
-    padding: 0.9rem 0 0; 
+    padding: 0.9rem 0 0;
 }
 
 .calendarBox{

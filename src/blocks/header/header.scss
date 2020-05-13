@@ -10,20 +10,16 @@
     padding: 0 8.75rem; 
 }
 
-.containerHeader ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-    width: 100%;
-}
-
 .containerNav{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    width: 70%;
+    width: 65.4%;
+}
+
+.containerNav_width_50{
+    width: 60.7%;
 }
 
 .containerNav p{
@@ -32,11 +28,21 @@
     align-items: center;
     border-left: 1px solid rgba(31, 32, 65, 0.1);
     height: 2rem;
-    width: 9rem;
+    width: 9.5rem;
+    padding-left: 1.8rem;
 }
 
-nav{
-    width: 37.45rem;
+.containerNav nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.containerNav nav{
+    margin-right: 1.8rem;
+    width: 100%;
 }
 
 .buttonsContainer{
@@ -44,21 +50,10 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 22.3rem;
+    width: 38%;
 }
 
-.containerHeader li{
-    padding-right: 1.95rem;
-}
-
-.containerHeader li:nth-child(2){
-    padding-right: 1.54rem;
-}
-
-.containerHeader li:nth-child(4){
-    padding-right: 1.6rem;
-}
-
-.containerHeader li:last-child{
-    padding-right: 0;
-}
+// .containerHeader li{
+//     padding-right: 1.5rem;
+//     padding-top: 0.15rem;
+// }

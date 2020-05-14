@@ -1,10 +1,10 @@
 .cardsMini{
-    width: 16.2rem;
+    width: 17.1rem;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     margin-bottom: 2.5rem;
-    padding: 1.3rem 1.8rem 1.3rem 1.8rem;
+    padding: 1.5rem 1.5rem 1.3rem 1.3rem;
     position: relative;
     z-index: 99;
 }
@@ -14,7 +14,7 @@
 }
 
 .calendarContainer{
-    margin: -1.4rem -0.5rem 0 -0.2rem;
+    margin: -1.35rem 0 0 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,7 +24,7 @@
 .tableCalendar{
     display: flex;
     flex-direction: column;
-    padding: 0.9rem 0 0;
+    padding: 1.32rem 0 0;
 }
 
 .calendarBox{
@@ -35,22 +35,31 @@
     margin: 0.5rem 0 0 -0.3rem; 
 }
 
-tr:first-child{
-    width: 16.3rem;
-    padding-left: 0.48rem;
+.tableCalendar tr{
+    margin-top: 0.4rem;
 }
 
-tr:nth-child(3), tr:nth-child(4){
-    margin-top: -0.2rem;
+tr:first-child{
+    width: 16.2rem;
+    margin-left: 0.5rem;
+    margin-top: 0;
+}
+
+tr:nth-child(3){
+    margin-top: 0.1rem;
+}
+
+tr:nth-child(4){
+    margin-top: -0.1rem;
 }
 
 tr:nth-child(5), tr:nth-child(6){
-    margin-top: -0.1rem;
+    margin-top: 0;
 }
 
 td{
     width: 2.5rem;
-    height: 2.5rem;
+    height: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +72,7 @@ td{
     align-items: center;
     justify-content: space-between;
     width: 17.5rem;
-    margin: 1.1rem -0.5rem -0.5rem;
+    margin: 1rem 0 -0.27rem -0.4;
 }
 
 .calendarCircle {
@@ -72,7 +81,7 @@ td{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 2.5rem;
+    height: 2.4rem;
     width: 2.5rem;
     color: #ffffff;
 }

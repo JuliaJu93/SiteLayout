@@ -1,38 +1,37 @@
-mixin footer (max)
+mixin footer (max, TextToxin, NAVIGATION, AboutUs, News, Support, Products, ABOUTUS, WhoWeAre, OutTeam, Careers, Investors, SUPPORT, Documentation, Community, GetInTouch, NEWSLETTER, Promotions, Copyright)
     if (max)
         .containerFooter
             .rowFooter
                 .columnFooter
                     include ../toxin/toxin
                     +toxin()
-                    p.bodyText Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+                    p.bodyText=TextToxin
                 .columnFooter
                     ul
-                        li.bodyText.text_height_17.text_weight_bold NAVIGATION
-                        li.bodyText.text_height_17 About Us
-                        li.bodyText.text_height_17 News
-                        li.bodyText.text_height_17 Support
-                        li.bodyText.text_height_17 Products
+                        li.text.text_type_h3=NAVIGATION
+                        li.bodyText.text_height_17=AboutUs
+                        li.bodyText.text_height_17=News
+                        li.bodyText.text_height_17=Support
+                        li.bodyText.text_height_17=Products
                 .columnFooter
                     ul
-                        li.bodyText.text_height_17.text_weight_bold ABOUT US
-                        li.bodyText.text_height_17 Who we are
-                        li.bodyText.text_height_17 Out team
-                        li.bodyText.text_height_17 Careers
-                        li.bodyText.text_height_17 Investors
+                        li.text.text_type_h3=ABOUTUS
+                        li.bodyText.text_height_17=WhoWeAre
+                        li.bodyText.text_height_17=OutTeam
+                        li.bodyText.text_height_17=Careers
+                        li.bodyText.text_height_17=Investors
                 .columnFooter
                     ul
-                        li.bodyText.text_height_17.text_weight_bold SUPPORT
-                        li.bodyText.text_height_17 Documentation
-                        li.bodyText.text_height_17 community
-                        li.bodyText.text_height_17 Get in Touch
-                .columnFooter
-                    p(id='text').bodyText.text_height_17.text_weight_bold SUBSCRIBE TO OUR NEWSLETTER
-                    p.bodyText.text_height_17 Receive our latest news and promotions in your inbox!
+                        li.text.text_type_h3=SUPPORT
+                        li.bodyText.text_height_17=Documentation
+                        li.bodyText.text_height_17=Community
+                        li.bodyText.text_height_17=GetInTouch
+                .columnFooter.text.text_type_h3=NEWSLETTER
+                    p.bodyText=Promotions
                         include ../subscription-text-field/subscription-text-field
                         +subscription('email', 'Your email address')
             .rowFooter
-                p.bodyText  Copyright © 2018 Toxin UI Kit. All rights reserved.
+                p.bodyText(id='Copyright')=Copyright
                 .containrImgFooter
                     include ../contacts/contacts
                     +contacts()
@@ -41,7 +40,7 @@ mixin footer (max)
             .columnFooter_center
                 include ../toxin/toxin
                 +toxin('containerToxin_position_center')
-                p.bodyText Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+                p.bodyText=TextToxin
                 .containrImgFooter
                     include ../contacts/contacts
                     +contacts('containerContacts')

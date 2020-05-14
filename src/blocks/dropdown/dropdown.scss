@@ -10,10 +10,10 @@
     align-items: center;
     border: 1px solid $ColorOfInactiveElements;
     border-radius: 5px;
-    margin-top: 1px;
     width: 19.9rem;
-    height: 2.71rem;
+    height: 2.7rem;
     position: relative;
+    z-index: 97;
 }
 
 .containerDropdownList{
@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: space-between;
     width: 18.2rem;
-    padding: 0.45rem 1.1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .blockDropdownList{
@@ -30,13 +30,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 18.2rem;
-    padding: 0.5rem 1.5rem 0.5rem 1.3rem;
+    width: 18.8rem;
+    padding-left: 0.8rem;
 }
 
-.blockDropdownMain > .blockDropdownList:first-child{
-    border: 1px solid transparent;
-    color: $ColorOfInactiveElements;
+.blockDropdownList:last-child{
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
 }
 
 .blockDropdownAdditional{
@@ -46,7 +46,7 @@
     border-top: 1px solid $ColorAdd-ons;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     width: 19.9rem;
-    top: 2.7rem;
+    top: 2.65rem;
     z-index: 98;
 }
 

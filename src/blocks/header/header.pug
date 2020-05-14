@@ -1,4 +1,4 @@
-mixin header(buttons, oneLi, twoLi, threeLi, fourLi, fifeLi, sixLi, buttonOneName, buttonTwoName, buttonStyleOne, buttonStyleTwo, widthNav)
+mixin header(buttons, oneLi, twoLi, threeLi, fourLi, fifeLi, sixLi, buttonOneName, buttonTwoName, buttonStyleOne, buttonStyleTwo, widthNav, widthButtonContainer)
     .containerHeader
         include ../toxin/toxin
         +toxin()
@@ -7,15 +7,21 @@ mixin header(buttons, oneLi, twoLi, threeLi, fourLi, fifeLi, sixLi, buttonOneNam
                 ul
                     li.bodyText.text_height_17.text_weight_bold=oneLi
                     li.bodyText.text_height_17=twoLi
-                    li.bodyText.text_height_17=threeLi 
-                        i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")
+                        if (twoLi==="Услуги")
+                            i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")
+                    li.bodyText.text_height_17=threeLi
+                        if(threeLi !=="Вакансии") 
+                            i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")
                     li.bodyText.text_height_17=fourLi
                     li.bodyText.text_height_17=fifeLi
-                    li.bodyText.text_height_17=sixLi
+                        if(fifeLi ==="Соглашения") 
+                            i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")
+                    if(sixLi)
+                        li.bodyText.text_height_17=sixLi
             if (!buttons)
                 p.bodyText.text_height_17 Cosmin Negoita
             if (buttons)
-                .buttonsContainer
+                .buttonsContainer(class=widthButtonContainer)
                     include ../buttons/buttons
                     +button(buttonOneName,'button_border_withBorder', 'button_size_mini', buttonStyleOne)
                     +button(buttonTwoName, 'button_color_gradient', 'button_size_mini', buttonStyleTwo)

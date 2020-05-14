@@ -12,7 +12,7 @@
 .containerHide{
     position: absolute;
     top: 16.2rem;
-    left: 10.7rem;
+    left: 10.6rem;
 }
 
 .containerHide_type_hide{
@@ -20,9 +20,18 @@
 }
 
 .containerImg{
+    display: flex;
+    justify-content: space-between;
     margin-top: -1px;
     position: relative;
-    height: 43.2rem;
-    padding: 4.3rem 8.72rem;
+    height: 46.3rem;
+    padding: 4.3rem 8.5rem 1.27rem 8.72rem;
     background-image: url('/img/image 3.jpg');
+}
+
+.containerImg p{
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  width: 17rem;
 }

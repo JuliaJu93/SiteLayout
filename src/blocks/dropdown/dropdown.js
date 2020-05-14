@@ -1,6 +1,6 @@
 let clear = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:first-child');
 let apply = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:last-child');
-let guestsDropdown = document.querySelector('.blockDropdownList:first-child p');
+let guestsDropdown = document.querySelector('.containerDropdownList p');
 let arrowDown = document.querySelector('.blockDropdownMain .containerDropdownList i');
 let list = document.querySelector ('.dropdownHide');
 let container = document.querySelector('.blockDropdownAdditional .blockDropdownList:first-child');
@@ -54,7 +54,13 @@ function Result() {
       case 1:
         sum  += ' гость';
       break;
-      case 2 || 3 || 4:
+      case 2:
+        sum  += ' гостя';
+      break;
+      case 3:
+        sum  += ' гостя';
+      break;
+      case 4:
         sum  += ' гостя';
       break;
       default:

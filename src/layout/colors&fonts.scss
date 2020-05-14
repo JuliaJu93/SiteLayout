@@ -6,7 +6,7 @@ $ColorBorder:  rgba(31, 32, 65, 0.05);
 $FirstColorGradient: #bc9cff;
 $SecondColorGradient: #6FCF97;
 
-$MainFont: 'Quicksand-Bold';
+$MainFont: 'Quicksand-Bold', 'Open Sans', Arial, Helvetica, sans-serif;
 $AdditionalFont: 'Montserrat-Bold';
 $AdditionalFontBody: 'Montserrat-Regular';
 $IconFont: 'fontawesome-webfont';
@@ -19,12 +19,13 @@ $IconFont: 'fontawesome-webfont';
 } 
 
 .text_type_h1{
-    font-size: 1.63rem;
-    line-height: 1.9rem;
+    font-size: 1.58rem;
+    line-height: 1.89rem;
+    letter-spacing: 0.033rem;
 }
 
 .text_type_h2{
-    font-size: 1.4rem;
+    font-size: 1.285rem;
     line-height: 1.5rem;
 }
 

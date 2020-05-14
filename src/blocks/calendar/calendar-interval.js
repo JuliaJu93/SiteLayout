@@ -121,9 +121,7 @@ export function Clear(){
     counterDatePicker = 0;
     div[0].parentNode.removeChild(div[0]);
     div[1].parentNode.removeChild(div[1]);
-    if (!calendar.classList.contain('containerHide_type_hide')){
-        result[0].innerText = `ДД.ММ.ГГГГ`;
-        result[1].innerText = `ДД.ММ.ГГГГ`;
-    }
+    result[0].innerText = `ДД.ММ.ГГГГ`;
+    result[1].innerText = `ДД.ММ.ГГГГ`;
 }
 

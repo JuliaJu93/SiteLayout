@@ -16,10 +16,6 @@
     z-index: 97;
 }
 
-.blockDropdownMain_size_mini{
-    width: 16.4rem;
-}
-
 .containerDropdownList{
     display: flex;
     flex-direction: row;
@@ -52,6 +48,10 @@
     width: 19.9rem;
     top: 2.65rem;
     z-index: 98;
+}
+
+.blockDropdownMain_size_mini{
+    width: 16.4rem;
 }
 
 .blockDropdownMain .blockDropdownList p{

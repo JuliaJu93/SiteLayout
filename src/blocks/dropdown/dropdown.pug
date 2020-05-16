@@ -6,7 +6,7 @@ mixin dropdown (name, size)
             .containerDropdownList
                 p.bodyText Сколько гостей
                 i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")
-        .blockDropdownAdditional.dropdownHide
+        .blockDropdownAdditional.dropdownHide(class=size)
             .blockDropdownList 
                 p.text.text_type_h3 ВЗРОСЛЫЕ
                 +Counter('0', 'buttonMinus_type_inactive')

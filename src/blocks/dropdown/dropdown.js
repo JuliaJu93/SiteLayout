@@ -45,11 +45,7 @@ function CounterMinus (e) {
 }
 
 function Result() {
-  let sum = 0;
-  for (let i = 0; i < 3; i++){
-    sum = sum + Number(result[i].innerText)   
-  }
-  if (sum > 0){
+  let sum = Number(result[0].innerText)+Number(result[1].innerText);   
     switch (sum) {
       case 1:
         sum  += ' гость';
@@ -63,11 +59,45 @@ function Result() {
       case 4:
         sum  += ' гостя';
       break;
+      case 0:
+        sum  = 0;
+      break;
       default:
         sum  += ' гостей';
       break;
-      }
-  guestsDropdown.innerText = sum;
+    }
+  let baby = Number(result[2].innerText);
+    switch (baby) {
+      case 1:
+        baby  += ' младенец';
+      break;
+      case 2:
+        baby  += ' младенца';
+      break;
+      case 3:
+        baby  += ' младенца';
+      break;
+      case 4:
+        baby  += ' младенца';
+      break;
+      case 0:
+        baby  = 0;
+      break;
+      default:
+        baby  += ' младенцев';
+      break;
+    }
+  if (baby === 0 && sum !== 0){
+    guestsDropdown.innerText = sum;
+  }
+  else if (sum === 0 && baby !== 0){
+    guestsDropdown.innerText = 'Необходимо добавить взрослого';
+  }
+  else if (sum !== 0 && baby !== 0){
+    guestsDropdown.innerText = sum + ', ' + baby;
+  }
+  else if(sum === 0 && baby === 0){
+    guestsDropdown.innerText = 'Сколько гостей';
   }
 }
 

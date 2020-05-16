@@ -1,9 +1,9 @@
 let inputsRy = {
-    sliderWidth: 300,
+    sliderWidth: 266,
     minRange: 0,
     maxRange: 15000, 
     outputWidth:30, // output width
-    thumbWidth: 18, // thumb width
+    thumbWidth: 13, // thumb width
     thumbBorderWidth: 4,
     trackHeight: 6,
     theValue: [5000, 10000] // theValue[0] < theValue[1]

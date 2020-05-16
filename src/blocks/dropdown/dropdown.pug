@@ -1,8 +1,8 @@
-mixin dropdown (name)
+mixin dropdown (name, size)
     include /dropdown__counter
     h3.text.text_type_h3=name
     .containerDropdown
-        .blockDropdownMain
+        .blockDropdownMain(class=size)
             .containerDropdownList
                 p.bodyText Сколько гостей
                 i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")

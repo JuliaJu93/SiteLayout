@@ -1,5 +1,5 @@
 mixin room (img, number, luxury, rub, review)
-    .cards.cards_size_mini
+    .cards.cards_size_mini.cardsShadow
         img.imgRoom(src=img)
         .imgContainer
             .arrowContainer
@@ -12,13 +12,15 @@ mixin room (img, number, luxury, rub, review)
                 i.fa.fa-circle-o(aria-hidden="true")
         .cardsContentRoom
             .roomRow
-                .roomRow.roomRow_indentation_upMini
-                    h1.text.roomNumberTextNumber.down №
-                    h1.text.roomNumberText=number
-                    h2.text.text_type_h3.text_color_purple.down=luxury
-                .roomRow.roomDown
-                    h3.text.text_type_h3.textsize_14.text_color_50=rub
-                    h3.text.text_type_h3.text_size_14.text_color_50.text_weight_normal в сутки
+                .roomRow
+                    .blockroomRow
+                        h1.text.text_type_h3 №
+                        h1.text.text_type_h2=number
+                        h2.text.text_type_h3.text_color_purple=luxury
+                .roomRow
+                    .blockroomRow
+                        h3.bodyText.text_height_18.text_color_50.text_weight_bold=rub
+                        h3.bodyText.text_height_18.text_color_50 в сутки
             .roomRow
                 .roomStarContainer
                     include ../rate-button/rate-button
@@ -30,6 +32,6 @@ mixin room (img, number, luxury, rub, review)
                         +rateButton('fa-star')
                     else
                         +rateButton('fa-star-o')
-                .roomRow
-                    h3.text.text_type_h3.text_size_14.text_color_50=review
-                    h3.text.text_type_h3.text_size_14.text_color_50.text_weight_normal Отзывов
+                .roomReview
+                    h3.bodyText.text_height_18.text_color_50.text_weight_bold=review
+                    h3.bodyText.text_height_18.text_color_50 Отзывов

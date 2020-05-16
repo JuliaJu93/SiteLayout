@@ -1,0 +1,59 @@
+extends ../../../layout/main 
+block variables
+    - var title = 'Search room';
+    .containerSearchRoom
+        .containerForHeader
+            include ../../../blocks/header/header
+            +header('buttons', 'О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения', '', 'ВОЙТИ', 'ЗАРЕГИСТРИРОВАТЬСЯ', 'button_landing_login', 'button_landing_register', 'containerNav_width_landing', 'buttonsContainer_width_landing')
+        .containerColumn
+            .columnMini
+                include ../../../blocks/filter-date-dropdown/filter-date-dropdown
+                +filterDateDropdown('ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ')
+                .containerElement
+                    include ../../../blocks/dropdown/dropdown
+                    +dropdown('ГОСТИ', 'blockDropdownMain_size_mini')
+                .containerElement.containerElement_indent_mini
+                    include ../../../blocks/range-slider/range-slider
+                    +slider('ДИАПАЗОН ЦЕНЫ')
+                    p.text.text_type_h3.text_weight_normal.text_color_50 Стоимость за сутки пребывания в номере
+                .containerElement.containerElement_indent_maxi 
+                    h3.text.text_type_h3 CHECKBOX BUTTONS
+                    include ../../../blocks/checkbox-buttons/checkbox-buttons
+                    +checkbox('SmokeSearchRoom', 'Можно курить')
+                    +checkbox('PetsSearchRoom', 'Можно с питомцами')
+                    +checkbox('GuestsSearchRoom', 'Можно пригласить гостей (до 10 человек)')
+                .containerElement.containerElement_indent_maxi
+                    h3.text.text_type_h3 ДОСТУПНОСТЬ
+                    .container__RichCheckbox
+                        include ../../../blocks/rich-checkbox-buttons/rich-checkbox-buttons
+                        +richCheckbox('CorridorSearchRoom', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
+                        +richCheckbox('AssistantSearchRoom', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист и проводит до номера.')
+                .containerElement
+                    include ../../../blocks/dropdown-room/dropdown-room
+                    +dropdownRoom('УДОБСТВА НОМЕРА')
+                include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list
+                +checkboxList('ДОПОЛНИТЕЛЬНЫЕ УДОБСТВА')
+            .columnMaxi
+                h1.text.text_type_h1 Номера, которые мы для вас подобрали
+                .columnMaxi__row
+                    include ../../../blocks/room/room
+                    +room('/img/rooms/room888.jpg', '888', ' ЛЮКС', '9990₽', '145')
+                    +room('/img/rooms/room840.jpg', '840', '', '9900₽', '65')
+                    +room('/img/rooms/room980.jpg', '980', ' ЛЮКС', '8500₽', '35')
+                .columnMaxi__row    
+                    +room('/img/rooms/room856.jpg', '856', '', '7300₽', '19')
+                    +room('/img/rooms/room740.jpg', '740', '', '6000₽', '44')
+                    +room('/img/rooms/room982.jpg', '982', '', '5800₽', '56')
+                .columnMaxi__row    
+                    +room('/img/rooms/room678.jpg', '678', '', '5500₽', '45')
+                    +room('/img/rooms/room450.jpg', '450', '', '5300₽', '39')
+                    +room('/img/rooms/room350.jpg', '350', '', '5000₽', '77')
+                .columnMaxi__row    
+                    +room('/img/rooms/room666.jpg', '666', '', '5000₽', '25')
+                    +room('/img/rooms/room444.jpg', '444', '', '5000₽', '15')
+                    +room('/img/rooms/room352.jpg', '352', '', '5000₽', '55')
+                .container__pagination
+                    include ../../../blocks/pagination/pagination
+        .containerForFooter
+            include ../../../blocks/footer/footer
+            +footer('max', 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'НАВИГАЦИЯ', 'О нас', 'Новости', 'Служба поддержки', 'Услуги', 'О НАС', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы', 'СЛУЖБА ПОДДЕРЖКИ', 'Соглашения', 'Сообщества', 'Связь с нами', 'ПОДПИСКА', 'Получайте специальные предложения и новости сегодня', 'Copyright © 2018 Toxin отель. Все права зачищены.')

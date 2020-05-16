@@ -16,13 +16,17 @@
     z-index: 97;
 }
 
+.blockDropdownMain_size_mini{
+    width: 16.4rem;
+}
+
 .containerDropdownList{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 18.2rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 91%;
+    height: 100%;
 }
 
 .blockDropdownList{
@@ -30,7 +34,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 18.8rem;
+    width: 90%;
     padding-left: 0.8rem;
 }
 

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     width: 44.5rem;
+    margin-bottom: 1.3rem;
 }
 
 .reviewColumn{
@@ -12,6 +13,7 @@
 .reviewColumn:first-child{
     justify-content: start;
     align-items: center;
+    margin-right: 0.57rem;
 }
 
 .reviewContainer .reviewColumn p{
@@ -19,9 +21,9 @@
 }
 
 .reviewContainer .reviewColumn .reviewPadding{
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 .reviewColumn img{
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.83rem;
 }

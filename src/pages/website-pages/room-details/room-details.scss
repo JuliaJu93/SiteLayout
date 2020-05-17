@@ -26,21 +26,58 @@
 .containerForInformation{
     display: flex;
     flex-direction: row;
+    padding: 4.3rem 8.8rem 1rem 8.8rem;
 }
 
 .containerForInformation__maxi{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerForInformation__maxi h2{
+    margin-top: 0;
+    margin-bottom: 1.2rem;
 }
 
 .containerForInformation__blockRow{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.containerForInformation__maxi > .containerForInformation__blockRow{
+    width: 86%;
+}
+
+.containerForInformation__blockRow:nth-child(2) .containerForInformation__blockColumn{
+    width: 120%;
+}
+
+.containerForInformation__blockRow:last-child .containerForInformation__blockColumn{
+    width: 38%;
+}
+
+.containerForInformation__blockRow:last-child {
+    width: 89%;
+}
+
+.containerForInformation__blockRow:last-child .containerForInformation__blockColumn:last-child{
+    width: 48%;
+}
+
+.containerForInformation__blockRow:last-child h2{
+    margin: 0.6rem 0 1.1rem 1.15rem;
+}
+
+.containerForInformation__blockRow:last-child .containerForInformation__blockColumn:last-child h2{
+    margin-left: 0.14rem;
 }
 
 .containerForInformation__blockColumn{
     display: flex;
     flex-direction: column;
+    width: 46.5%;
 }
 
 .containerForHeader{
@@ -48,4 +85,9 @@
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     position: relative;
     z-index: 1;
+}
+
+.containerForFooter{
+    margin-top: 2.7rem;
+    border-top: 1px solid rgba(31, 32, 65, 0.25);
 }

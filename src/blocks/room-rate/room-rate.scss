@@ -2,7 +2,7 @@
 @import "../dropdown/dropdown";
 @import "../buttons/buttons";
 
-.cards{
+.cardsRoomRate{
     width: 20rem;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -10,6 +10,7 @@
     border-radius: 4px;
     margin-bottom: 2.5rem;
     padding: 1.3rem 1.8rem 1.3rem 1.8rem;
+    height: 29.2rem;
 }
 
 .rateRow {
@@ -17,10 +18,22 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -0.2rem;
+}
+
+.rateRow__total{
+    display: flex;
+    margin: -0.3rem 0 0.2rem 0;
+}
+
+.dottedLine{
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    width: 54%;
+    height: 0.8rem;
 }
 
 .rateRow_indentation_down {
-    margin: 1.1rem 0 0.9rem;
+    margin: -0.1rem 0 0.7rem;
 }
 
 .rateRow_indentation_upMini {

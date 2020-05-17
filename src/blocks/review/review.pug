@@ -1,7 +1,7 @@
-mixin review(name, days, text)    
+mixin review(name, days, text, foto)    
     .reviewContainer
         .reviewColumn
-            img(src='img/review1.png')
+            img(src=foto)
             include ../like-button/like-button
         .reviewColumn
             p.bodyText.text_weight_bold=name

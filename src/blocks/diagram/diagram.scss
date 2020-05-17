@@ -1,0 +1,98 @@
+.containerDiagram{
+    display: flex;
+    flex-direction: row;
+}
+
+.containerSector {
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+
+.sector{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform-origin: left bottom;
+    border: 1px solid #fff;
+}
+
+.sector_color_blue{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.sector_color_green{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.sector_rotate_90{
+    transform: rotate(90deg);
+}
+
+.containerSector:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    border-radius: 50%;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+}
+
+.containerSector__text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 27%;
+    left: 27%;
+    z-index: 3;
+}
+
+.containerTextForDiagram ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none; 
+}
+
+.containerTextForDiagram_block{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.containerTextForDiagram_block i.fa.fa-circle{
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.DiagramCircle_color_orange{
+    background:  linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+
+.DiagramCircle_color_green{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.DiagramCircle_color_blue{
+    background:  linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.DiagramCircle_color_black{
+    background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+}
+
+.DiagramCircle{
+    background-clip: text;
+    color: transparent;
+}
+
+
+

@@ -30,6 +30,7 @@ mixin footer (max, TextToxin, NAVIGATION, AboutUs, News, Support, Products, ABOU
                     p.bodyText=Promotions
                         include ../subscription-text-field/subscription-text-field
                         +subscription('email', 'Your email address')
+        .rowFooter_style_line    
             .rowFooter
                 p.bodyText(id='Copyright')=Copyright
                 .containrImgFooter

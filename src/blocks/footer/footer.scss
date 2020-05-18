@@ -53,8 +53,19 @@
     justify-content: space-between;
 }
 
+.rowFooter_style_line{
+    border-top: 1px solid rgba(31, 32, 65, 0.1);
+    padding-top: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
 .rowFooter:first-child{
-    margin-bottom: 6.8rem;
+    margin-bottom: 5.4rem;
+}
+
+.rowFooter_style_line .rowFooter{
+    width: 80.7%;
 }
 
 #Copyright{

@@ -1,8 +1,9 @@
-mixin review(name, days, text, foto)    
+mixin review(name, days, text, foto, number, active)    
     .reviewContainer
         .reviewColumn
             img(src=foto)
             include ../like-button/like-button
+            +likeButton(active, number)
         .reviewColumn
             p.bodyText.text_weight_bold=name
             p.bodyText=days

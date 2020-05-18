@@ -52,7 +52,10 @@ block variables
                     .blockContent
                         .blockText
                             h3.text.text_type_h3 LIKE BUTTON
-                        include ../../../blocks/like-button/like-button
+                        .blockButton
+                            include ../../../blocks/like-button/like-button
+                            +likeButton('', '2')
+                            +likeButton('active', '12')
                     .blockContent
                         .blockText
                     h3.text.text_type_h3 RICH CHECKBOX BUTTON

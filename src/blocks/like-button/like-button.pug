@@ -1,4 +1,9 @@
-button.like-button.like-button_state_passive(type="button") 
-    i.fa.fa-heart-o(aria-hidden="true")
-    i.fa.fa-heart.hide(aria-hidden="true")
-    p.styleNumber 0
+mixin likeButton(active, number)
+    if (active)
+        button.like-button.like-button_state_active(type="button") 
+            i.fa.fa-heart(aria-hidden="true")
+            p.styleNumber.styleNumber_color_active=number
+    else
+        button.like-button.like-button_state_passive(type="button") 
+            i.fa.fa-heart-o(aria-hidden="true")
+            p.styleNumber.styleNumber_color_passive=number

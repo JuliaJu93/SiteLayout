@@ -1,6 +1,7 @@
 @import "../buttons/buttons";
+@import "../text-field/text-field";
 
-.cards{
+.cardsLogin{
     width: 20rem;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -8,6 +9,10 @@
     border-radius: 4px;
     margin-bottom: 2.5rem;
     padding: 1.3rem 1.8rem 1.3rem 1.8rem;
+}
+
+.cardsLogin h1{
+    margin-bottom: 1.2rem;
 }
 
 .loginRow{
@@ -19,7 +24,7 @@
 }
 
 .loginBox{
-    margin-top: 0.8rem;
+    margin-top: 0.7rem;
 }
 
 .loginBox_indentation_down{

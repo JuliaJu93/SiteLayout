@@ -1,0 +1,15 @@
+@import "../../../layout/colors&fonts.scss";
+@import "../../../layout/fontawesome-webfont/font-awesome.scss";
+@import "../../../pages/ui-kit/headers&footers/headers&footers.scss";
+@import "../../../blocks/login/login.scss";
+
+.containerSignInImg{
+    background: url("/img/registration.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSignInBlock{
+    margin: 10.1rem 0 7.7rem;
+}

@@ -26,7 +26,8 @@ module.exports = {
     'landing-pages': path.join(__dirname,'../src/pages/website-pages/landing-pages/landing-pages.js'),
     'search-room': path.join(__dirname,'../src/pages/website-pages/search-room/search-room.js'),
     'room-details': path.join(__dirname,'../src/pages/website-pages/room-details/room-details.js'),
-    'registration': path.join(__dirname,'../src/pages/website-pages/registration/registration.js')
+    'registration': path.join(__dirname,'../src/pages/website-pages/registration/registration.js'),
+    'sign-in': path.join(__dirname,'../src/pages/website-pages/sign-in/sign-in.js')
   },
  
  output: {
@@ -150,6 +151,13 @@ module.exports = {
       hash: false,
       template: `${PATHS.src}/pages/website-pages/registration/registration.pug`,
       filename: './registration.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      chunks: ['app', 'sign-in'],
+      hash: false,
+      template: `${PATHS.src}/pages/website-pages/sign-in/sign-in.pug`,
+      filename: './sign-in.html'
     }),
   
     new CopyWebpackPlugin([

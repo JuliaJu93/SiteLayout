@@ -1,11 +1,12 @@
-.cards
+.cardsLogin
     h1.text.text_type_h1 Войти
     .loginBox
+        include ../text-field/text-field
         +textField('text', 'Email')
     .loginBox.loginBox_indentation_down 
         +textField('text', 'Пароль')
     include ../buttons/buttons
-    +button('ВОЙТИ', 'searchRoom', 'button_color_gradient')
+    +button('ВОЙТИ', 'button_color_gradient')
     .loginRow
         p.text.text_type_h3.text_size_14.text_weight_normal Уже есть аккаунт на Toxin
-        +button('СОЗДАТЬ', 'registrationButtonTwo', 'button_border_withBorder','button_size_mini')
+        +button('СОЗДАТЬ', 'button_border_withBorder','button_size_mini')

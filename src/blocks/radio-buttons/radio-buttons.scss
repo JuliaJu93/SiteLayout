@@ -1,7 +1,7 @@
 .blockRadio{
     display: flex;
     flex-direction: row;
-    padding: 0.6rem 1.4rem 0.6rem 0;
+    padding: 0.57rem 1.2rem 0.8rem 0.2rem;
 }
 
 .radio {
@@ -25,7 +25,7 @@
     flex-grow: 0;
     border: 1px solid $ColorOfInactiveElements;
     border-radius: 50%;
-    margin-right: 0.5em;
+    margin-right: 0.6rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70% 70%;

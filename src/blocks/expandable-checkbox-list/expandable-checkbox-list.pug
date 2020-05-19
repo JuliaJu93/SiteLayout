@@ -1,8 +1,9 @@
 mixin checkboxList (name)
-    .blockCheckboxList
+    .blockExpandableCheckboxList
         h3.text.text_type_h3=name
         i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true", id="arrow")
-    .checkboxList.hide(id="checkboxList")
+    .expandableCheckboxList.hide(id="checkboxList")
+        include ../checkbox-buttons/checkbox-buttons
         +checkbox("breakfast", "Завтрак")
         +checkbox("table","Письменный стол")
         +checkbox("chear","Стул для кормления")
@@ -11,9 +12,3 @@ mixin checkboxList (name)
         +checkbox("shampoo","Шампунь")
         +checkbox("tv","Телевизор")
         +checkbox("shampooToo","Шампунь")
-
-
-mixin checkbox(id,text)
-    .blockCheckbox
-        input.checkbox(type='checkbox', id=id)
-        label.bodyText.text_height_18.text_color_50(for=id)=text

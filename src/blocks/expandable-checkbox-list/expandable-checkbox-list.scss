@@ -1,16 +1,18 @@
-.blockCheckboxList{
+.blockExpandableCheckboxList{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.8rem 0 1rem;
+    padding: 1.8rem 0 0;
     width: 15.7rem;
 }
 
-.blockCheckbox{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1rem;
+.expandableCheckboxList  .blockCheckbox:first-child{
+    margin: 0.9rem 0 0;
+}
+
+.expandableCheckboxList  .blockCheckbox{
+    margin: 0.66rem 0 0;
 }
 
 .hide{

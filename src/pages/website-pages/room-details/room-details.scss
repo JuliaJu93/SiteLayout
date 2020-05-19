@@ -7,10 +7,16 @@
 @import "../../../blocks/like-button/like-button";
 @import "../../../blocks/bullet-list/bullet-list";
 @import "../../../blocks/diagram/diagram";
+@import "../../../blocks/calendar/calendar";
 
 .containerRoomDetails{
     display: flex;
     flex-direction: column;
+}
+
+.containerHide{
+    top: 49rem;
+    left: 59.25rem;
 }
 
 .containerForImg{

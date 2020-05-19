@@ -9,6 +9,16 @@
     z-index: 99;
 }
 
+.containerHide{
+    position: absolute;
+    top: 16.2rem;
+    left: 10.6rem;
+}
+
+.containerHide_type_hide{
+    display: none;
+}
+
 .cardsMini_shadow_shadow{
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
@@ -109,3 +119,4 @@ td{
 .intervalColor{
     background-color:  rgba(188, 156, 255, 0.2);
 }
+

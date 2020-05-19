@@ -98,10 +98,10 @@ function ColoringInterval(){
 
 clear.onclick = Clear;
 
-export function Clear(){
+function Clear(){
     let div = document.querySelectorAll('td div.colorDiv');
     let tr = document.querySelectorAll('tr');
-    let result = document.querySelectorAll('.cardsRow div.blockDateDropdownList p');
+    let result = document.querySelectorAll('div.blockDateDropdownList p');
     for (let i = 11; i < date.length; i++){
         if (date[i].classList.contains('calendarCircle')){
             date[i].classList.remove('calendarCircle'); 

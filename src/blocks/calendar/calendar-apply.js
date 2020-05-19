@@ -1,7 +1,5 @@
-import {Clear} from './calendar-interval';
-
 let apply = document.querySelector('div.blockcalendarList p:last-child');
-let result = document.querySelectorAll('.cardsRow div.blockDateDropdownList p');
+let result = document.querySelectorAll('div.blockDateDropdownList p');
 
 apply.onclick = Apply;
 

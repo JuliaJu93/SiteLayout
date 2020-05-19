@@ -32,7 +32,7 @@
     background-image: url('/img/image 3.jpg');
 }
 
-.containerImg p:last-child{
+.containerImg p.bodyText:last-child{
   display: flex;
   align-items: flex-end;
   text-align: right;

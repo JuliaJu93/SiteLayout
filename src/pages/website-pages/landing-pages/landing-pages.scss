@@ -43,3 +43,52 @@
   width: 25%;
   text-align: end;
 }
+
+@media screen and (min-width: 1450px) {
+    .containerImg{
+        margin: 0 auto;
+        width: 70%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .containerImg__containerCard{
+        display: flex;
+        justify-content: center;
+    }
+    .containerImg__containerText p.bodyText{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 850px) {
+    .containerImg{
+        padding: 1rem 0.5rem;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cardsRow{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+    .cardsSearch{
+        padding: 1rem;
+        height: 100%;
+        width: 90%;
+        margin: 1rem;
+    }
+    .cardsSearch h1{ 
+        margin: 0.2rem;
+        font-size: 1.3rem;
+    }
+    .blockDropdownMain{
+        width: 100%;
+    }
+    .cardscontainer:last-child{
+        margin: 0;
+    }
+}

@@ -116,6 +116,7 @@ li i{
     .containerNav{
         justify-content: center;
         flex-wrap: wrap;
+        min-width: 600px;
     }
     .containerNav nav ul{
        width: 70%;
@@ -123,15 +124,29 @@ li i{
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    .containerNav{
+        min-width: 520px;
+    }
     .containerNav nav ul{
-       width: 45%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containerNav{
+        min-width: 300px;
+    }
+    .containerNav nav ul{
        flex-wrap: wrap;
        justify-content: center;
        margin-bottom: 0.2rem;
     }
     .containerNav nav ul li{
        margin-right: 1rem;
-     }
+    }
+    .buttonsContainer_width_landing{
+        width: 100%;
+    }
 }
 

@@ -24,6 +24,7 @@
 
 .containerImg{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-repeat: no-repeat;
     margin-top: -1px;
@@ -33,10 +34,12 @@
     background-image: url('/img/image 3.jpg');
 }
 
-.containerImg p.bodyText:last-child{
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
+.containerImg__containerText{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerImg__containerText p.bodyText{
   width: 25%;
-  margin: 0;
+  text-align: end;
 }

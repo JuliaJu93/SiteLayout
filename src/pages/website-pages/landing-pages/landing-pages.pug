@@ -5,9 +5,11 @@ block variables
         include ../../../blocks/header/header
         +header('buttons', 'О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения', '', 'ВОЙТИ', 'ЗАРЕГИСТРИРОВАТЬСЯ', 'button_landing_login', 'button_landing_register', 'containerNav_width_landing', 'buttonsContainer_width_landing')
         .containerImg
-            include ../../../blocks/search-rooms/search-rooms
-            .containerHide.containerHide_type_hide
-                include ../../../blocks/calendar/calendar
-            p.bodyText Лучшие номера для вашей работы, отдыха и просто вдохновения
+            .containerImg__containerCard
+                include ../../../blocks/search-rooms/search-rooms
+                .containerHide.containerHide_type_hide
+                    include ../../../blocks/calendar/calendar
+            .containerImg__containerText
+                p.bodyText Лучшие номера для вашей работы, отдыха и просто вдохновения
         include ../../../blocks/footer/footer
         +footer('max', 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'НАВИГАЦИЯ', 'О нас', 'Новости', 'Служба поддержки', 'Услуги', 'О НАС', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы', 'СЛУЖБА ПОДДЕРЖКИ', 'Соглашения', 'Сообщества', 'Связь с нами', 'ПОДПИСКА', 'Получайте специальные предложения и новости сегодня', 'Copyright © 2018 Toxin отель. Все права зачищены.')

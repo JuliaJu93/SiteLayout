@@ -93,3 +93,84 @@
     margin-bottom: 1.2rem;
     width: 17rem;
 }
+
+@media screen and (max-width: 1250px) {
+    .columnFooter{
+      margin-right: 1rem;
+    }
+    .rowFooter p.bodyText{
+        width: 100%;
+    }
+    .blockSubscription{
+        width: 100%;
+    }
+    .containerFooter{
+        padding: 3rem 2rem 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .containerFooter{
+        padding: 1.5rem 1rem 0;
+    }
+    .rowFooter p.bodyText{
+        margin: 0;
+        padding: 0;
+    }
+    .rowFooter{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .columnFooter li, .columnFooter li:first-child{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .containerFooter{
+        padding: 1rem 0 0 1rem;
+    }
+    .rowFooter, .rowFooter:first-child{
+        margin: 0;
+    }
+    .containerFooter_center{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .containrImgFooter{
+        margin-left: 0;
+    }
+    #Copyright{
+        width: 100%;
+        text-align: center;
+    }
+    .columnFooter{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .containerToxin{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .columnFooter{
+        width: 40%;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .columnFooter:first-child{
+        width: 100%;
+    }
+    .columnFooter:last-child{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .containrImgFooter{
+        margin-top: 1rem;
+    }
+    .blockSubscription{
+        width: 70%;
+        margin: 0 auto;
+    }
+}

@@ -7,7 +7,8 @@
     justify-content: space-between;
     height: 4.45rem;
     background-color: #ffffff;
-    padding: 0 8.75rem; 
+    padding: 0 8.75rem;
+    flex-wrap: wrap; 
 }
 
 .containerNav{
@@ -16,6 +17,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 65.4%;
+    min-width: 700px;
 }
 
 .containerNav_width_60.7{
@@ -66,8 +68,69 @@ li i{
     margin-right: 0.1rem;
 }
 
-@media screen and (max-width: 700px) {
-    .containerHeader{
- 
+@media screen and (min-width: 1700px) {
+    .containerNav{
+        width: 55%;
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .containerNav{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .containerHeader{
+        padding: 0 2rem; 
+    }
+    .containerNav nav{
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .containerNav{
+        width: 80%;
+    }
+    .containerHeader{
+        padding: 0 1rem; 
+    }
+    .button_landing_register{
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .containerHeader{
+        height: 10rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .containerNav{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .containerNav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .containerNav nav ul{
+       width: 70%;
+       margin: 0 auto 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containerNav nav ul{
+       width: 45%;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .containerNav nav ul li{
+       margin-right: 1rem;
+     }
+}
+

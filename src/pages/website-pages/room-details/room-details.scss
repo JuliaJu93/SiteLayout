@@ -97,3 +97,141 @@
     margin-top: 2.7rem;
     border-top: 1px solid rgba(31, 32, 65, 0.25);
 }
+
+@media screen and (min-width: 1450px) {
+    .containerForImg{
+        margin: 0 auto;
+    }
+    .containerSector{
+        width: 8rem;
+        margin-right: 1rem;
+    }
+    .containerForInformation__blockRow{
+        justify-content: start;
+    }
+    .containerForInformation__blockColumn{
+        width: 40%;
+    }
+    .containerForInformation__maxi{
+        margin-right: 0;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .containerForInformation__blockColumn{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .containerForInformation{
+        padding: 3rem;
+        justify-content: space-between;
+    }
+    .containerForInformation__blockRow{
+        width: 70%;
+    }
+    .containerForImg__mini{
+        display: none;;
+    }
+    .containerForImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .containerForInformation__maxi{
+        margin-right: 0;
+        width: 60%;
+    }
+    .reviewContainer{
+        width: 90%;
+    }
+    .containerForInformation__blockColumn{
+        width: 60%;
+        flex-wrap: wrap;
+    }
+    .containerForInformation__blockRow{
+        width: 100%;
+    }
+    .containerSector{
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .containerForInformation{
+        padding: 2rem;
+    }
+    .containerForInformation__blockRow{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .containerForInformation__blockColumn{
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    .containerDiagram{
+        margin-bottom: 1rem;
+    }
+    .containerForImg img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .containerForInformation{
+        padding: 2rem 2rem 0;
+        flex-direction: column-reverse;
+    }
+    .containerForInformation__maxi{
+        width: 100%;
+    }
+    .containerForInformation__blockColumn{
+        width: 50%;
+    }
+    .cardsRoomRate{
+        margin: 0 auto 2rem; 
+    }
+    .containerForInformation__blockRow, .containerForInformation__blockRow:last-child{
+        width: 100%;
+    }
+    .containerForInformation__maxi>.containerForInformation__blockRow{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .containerForInformation__blockColumn{
+        width: 100%;
+        justify-content: center;
+    }
+    .containerDiagram{
+        justify-content: start;
+    }
+    .containerForInformation__blockRow:last-child .containerForInformation__blockColumn:last-child, .containerForInformation__blockRow:last-child .containerForInformation__blockColumn{
+        width: 100%;
+    }
+    img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cardsRoomRate{
+        padding: 1rem;
+        height: 100%;
+        width: 90%;
+    }
+    .rateRow{
+        flex-wrap: wrap;
+    }
+    .blockDropdownMain, .containerDropdownList{
+        width: 100%;
+    }
+}
+
+

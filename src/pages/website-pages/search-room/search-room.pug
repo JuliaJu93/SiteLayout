@@ -7,8 +7,9 @@ block variables
             +header('buttons', 'О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения', '', 'ВОЙТИ', 'ЗАРЕГИСТРИРОВАТЬСЯ', 'button_landing_login', 'button_landing_register', 'containerNav_width_landing', 'buttonsContainer_width_landing')
         .containerColumn
             .columnMini
-                include ../../../blocks/filter-date-dropdown/filter-date-dropdown
-                +filterDateDropdown('ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ')
+                .columnMini__element
+                    include ../../../blocks/filter-date-dropdown/filter-date-dropdown
+                    +filterDateDropdown('ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ')
                 .containerElement
                     include ../../../blocks/dropdown/dropdown
                     +dropdown('ГОСТИ', 'blockDropdownMain_size_mini')

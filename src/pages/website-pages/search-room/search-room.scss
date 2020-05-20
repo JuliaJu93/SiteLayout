@@ -77,3 +77,59 @@
     width: 100%;
     border-top: 1px solid $FirstColorGradient;
 }
+
+@media screen and (min-width: 1500px) {
+    .columnMaxi__row{
+        justify-content: center;
+    }
+    .containerColumn {
+        padding: 1.6rem 12rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .arrowContainer{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .containerColumn {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .containerColumn {
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .columnMini{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 0 auto;
+    }
+    .containerElement, .columnMini__element{
+        margin: 0;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+    .columnMaxi{
+        width: 100%;
+    }   
+}
+
+@media screen and (max-width: 850px) {
+    .columnMini{
+        width: 90%;
+    }
+    .columnMaxi__row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -13,3 +13,39 @@
 .containerSignInBlock{
     margin: 10.1rem 0 7.7rem;
 }
+
+@media screen and (min-width: 1450px) {
+    .containerSignInImg{
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .containerSignInBlock{
+        margin: 0;
+    }
+    div.cardsLogin{
+        padding: 1rem;
+        height: 100%;
+        margin: 1rem;
+        width: 80%;
+    }
+    .cardsLogin h1{
+        margin: 0.2rem;
+        font-size: 1.3rem;
+    }
+    .containerTextField input{
+        width: 100%;
+    }
+    .cardsRowStart, .registrationRow{
+        margin: 0.2rem 0 0;
+        width: 100%;
+    }
+    .registrationBox{
+        margin: 0.2rem 0 0;
+    }
+    .BlockGroupRadio{
+        padding: 0;
+    }
+}

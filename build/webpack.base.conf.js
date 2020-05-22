@@ -101,6 +101,9 @@ module.exports = {
             },
           },
           {
+            loader: 'resolve-url-loader',
+          },
+          {
             loader: 'sass-loader',
             options: { sourceMap: true },
           },

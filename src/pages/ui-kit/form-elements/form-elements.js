@@ -1,5 +1,5 @@
 import "./form-elements.scss"
-import '../../../blocks/expandable-checkbox-list/expandable-checkbox-list.js'
-import '../../../blocks/range-slider/range-slider.js'
-import '../../../blocks/dropdown/dropdown.js'
-import '../../../blocks/dropdown-room/dropdown-room.js'
+import '../../../elements/expandable-checkbox-list/expandable-checkbox-list.js'
+import '../../../elements/range-slider/range-slider.js'
+import '../../../elements/dropdown/dropdown.js'
+import '../../../elements/dropdown-room/dropdown-room.js'

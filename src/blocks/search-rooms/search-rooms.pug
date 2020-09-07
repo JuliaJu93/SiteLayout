@@ -1,12 +1,12 @@
 .cardsSearch
     h1.text.text_type_h1 Найдём номера под ваши пожелания
     .cardsRow
-        include ../date-dropdown/date-dropdown
+        include ../../elements/date-dropdown/date-dropdown
         +dateDropdown('ПРИБЫТИЕ')
         +dateDropdown('ВЫЕЗД')
     .cardscontainer   
-        include ../dropdown/dropdown
+        include ../../elements/dropdown/dropdown
         +dropdown('ГОСТИ')
     .cardscontainer 
-        include ../buttons/buttons
+        include ../../elements/buttons/buttons
         +button('ПОДОБРАТЬ НОМЕР','button_color_gradient')

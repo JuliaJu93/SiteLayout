@@ -8,11 +8,11 @@
             h3.bodyText.text_color_50.text_weight_bold 9 990₽
             h3.bodyText.text_color_50 в сутки
     .rateRow
-        include ../date-dropdown/date-dropdown
+        include ../../elements/date-dropdown/date-dropdown
         +dateDropdown('ПРИБЫТИЕ') 
         +dateDropdown('ВЫЕЗД')
     .reteContainer
-        include ../dropdown/dropdown
+        include ../../elements/dropdown/dropdown
         +dropdown('ГОСТИ')
     .rateRow.rateRow_indentation_down
         p.bodyText.widthBlock 9 990₽ х 4 суток
@@ -32,5 +32,5 @@
         .dottedLine
         h2.text.text_type_h2 38 081₽
     .ratebox
-        include ../buttons/buttons
+        include ../../elements/buttons/buttons
         +button('ЗАБРОНИРОВАТЬ', 'button_color_gradient')

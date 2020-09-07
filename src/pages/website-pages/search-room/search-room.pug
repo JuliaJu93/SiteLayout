@@ -8,31 +8,31 @@ block variables
         .containerColumn
             .columnMini
                 .columnMini__element
-                    include ../../../blocks/filter-date-dropdown/filter-date-dropdown
+                    include ../../../elements/filter-date-dropdown/filter-date-dropdown
                     +filterDateDropdown('ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ')
                 .containerElement
-                    include ../../../blocks/dropdown/dropdown
+                    include ../../../elements/dropdown/dropdown
                     +dropdown('ГОСТИ', 'blockDropdownMain_size_mini')
                 .containerElement.containerElement_indent_mini
-                    include ../../../blocks/range-slider/range-slider
+                    include ../../../elements/range-slider/range-slider
                     +slider('ДИАПАЗОН ЦЕНЫ')
                     p.text.text_type_h3.text_weight_normal.text_color_50 Стоимость за сутки пребывания в номере
                 .containerElement.containerElement_indent_maxi 
                     h3.text.text_type_h3 CHECKBOX BUTTONS
-                    include ../../../blocks/checkbox-buttons/checkbox-buttons
+                    include ../../../elements/checkbox-buttons/checkbox-buttons
                     +checkbox('SmokeSearchRoom', 'Можно курить')
                     +checkbox('PetsSearchRoom', 'Можно с питомцами')
                     +checkbox('GuestsSearchRoom', 'Можно пригласить гостей (до 10 человек)')
                 .containerElement.containerElement_indent_maxi
                     h3.text.text_type_h3 ДОСТУПНОСТЬ
                     .container__RichCheckbox
-                        include ../../../blocks/rich-checkbox-buttons/rich-checkbox-buttons
+                        include ../../../elements/rich-checkbox-buttons/rich-checkbox-buttons
                         +richCheckbox('CorridorSearchRoom', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
                         +richCheckbox('AssistantSearchRoom', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист и проводит до номера.')
                 .containerElement
-                    include ../../../blocks/dropdown-room/dropdown-room
+                    include ../../../elements/dropdown-room/dropdown-room
                     +dropdownRoom('УДОБСТВА НОМЕРА')
-                include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list
+                include ../../../elements/expandable-checkbox-list/expandable-checkbox-list
                 +checkboxList('ДОПОЛНИТЕЛЬНЫЕ УДОБСТВА')
             .columnMaxi
                 h1.text.text_type_h1 Номера, которые мы для вас подобрали
@@ -54,7 +54,7 @@ block variables
                     +room('../img/rooms/room444.jpg', '444', '', '5000₽', '15')
                     +room('../img/rooms/room352.jpg', '352', '', '5000₽', '55')
                 .container__pagination
-                    include ../../../blocks/pagination/pagination
+                    include ../../../elements/pagination/pagination
         .containerForFooter
             include ../../../blocks/footer/footer
             +footer('max', 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'НАВИГАЦИЯ', 'О нас', 'Новости', 'Служба поддержки', 'Услуги', 'О НАС', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы', 'СЛУЖБА ПОДДЕРЖКИ', 'Соглашения', 'Сообщества', 'Связь с нами', 'ПОДПИСКА', 'Получайте специальные предложения и новости сегодня', 'Copyright © 2018 Toxin отель. Все права зачищены.')

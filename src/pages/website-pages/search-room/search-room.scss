@@ -1,14 +1,14 @@
 @import "../../../layout/colors&fonts.scss";
 @import "../../../pages/ui-kit/headers&footers/headers&footers.scss";
-@import "../../../blocks/filter-date-dropdown/filter-date-dropdown";
-@import "../../../blocks/dropdown/dropdown";
-@import "../../../blocks/range-slider/range-slider";
-@import "../../../blocks/checkbox-buttons/checkbox-buttons";
-@import "../../../blocks/rich-checkbox-buttons/rich-checkbox-buttons";
-@import "../../../blocks/dropdown-room/dropdown-room";
-@import "../../../blocks/expandable-checkbox-list/expandable-checkbox-list";
+@import "../../../elements/filter-date-dropdown/filter-date-dropdown";
+@import "../../../elements/dropdown/dropdown";
+@import "../../../elements/range-slider/range-slider";
+@import "../../../elements/checkbox-buttons/checkbox-buttons";
+@import "../../../elements/rich-checkbox-buttons/rich-checkbox-buttons";
+@import "../../../elements/dropdown-room/dropdown-room";
+@import "../../../elements/expandable-checkbox-list/expandable-checkbox-list";
 @import "../../../blocks/room/room";
-@import "../../../blocks/pagination/pagination";
+@import "../../../elements/pagination/pagination";
 
 .containerSearchRoom{
     display: flex;

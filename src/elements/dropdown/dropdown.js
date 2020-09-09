@@ -1,12 +1,12 @@
-let clear = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:first-child');
-let apply = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:last-child');
-let guestsDropdown = document.querySelector('.containerDropdownList p');
-let arrowDown = document.querySelector('.blockDropdownMain .containerDropdownList i');
-let list = document.querySelector ('.dropdownHide');
-let container = document.querySelector('.blockDropdownAdditional .blockDropdownList:first-child');
-let result = document.querySelectorAll('.blockDropdownAdditional .pCounter');
-let minus = document.querySelectorAll('.blockDropdownAdditional button.buttonMinus');
-let plus = document.querySelectorAll('.blockDropdownAdditional button.buttonPlus');
+const clear = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:first-child');
+const apply = document.querySelector('.blockDropdownAdditional .blockDropdownList:last-child p:last-child');
+const guestsDropdown = document.querySelector('.containerDropdownList p');
+const arrowDown = document.querySelector('.blockDropdownMain .containerDropdownList i');
+const list = document.querySelector ('.dropdownHide');
+const container = document.querySelector('.blockDropdownAdditional .blockDropdownList:first-child');
+const result = document.querySelectorAll('.blockDropdownAdditional .pCounter');
+const minus = document.querySelectorAll('.blockDropdownAdditional button.buttonMinus');
+const plus = document.querySelectorAll('.blockDropdownAdditional button.buttonPlus');
 
 arrowDown.onclick = OpenList;
 apply.onclick = Result;
@@ -99,6 +99,7 @@ function Result() {
   else if(sum === 0 && baby === 0){
     guestsDropdown.innerText = 'Сколько гостей';
   }
+  OpenList();
 }
 
 function Clear() {

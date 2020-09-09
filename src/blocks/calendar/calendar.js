@@ -1,4 +1,4 @@
-let calendar = document.querySelector('table.tableCalendar');
+const calendar = document.querySelector('table.tableCalendar');
 
 function CreateLine(){
     return document.createElement('tr');
@@ -52,10 +52,10 @@ function FillingCalendar (){
 CreateCalendarStructure ();
 
 function SelectionOfDays(){
-    let twoLine = document.querySelector('tr:nth-child(2)');
-    let tdTwoLine = twoLine.querySelectorAll('td');
-    let lastLine = document.querySelector('tr:nth-child(6)');
-    let tdLastLine = lastLine.querySelectorAll('td');
+    const twoLine = document.querySelector('tr:nth-child(2)');
+    const tdTwoLine = twoLine.querySelectorAll('td');
+    const lastLine = document.querySelector('tr:nth-child(6)');
+    const tdLastLine = lastLine.querySelectorAll('td');
     for (let i = 0; i < 7; i++){
         if(tdTwoLine[i].innerText > 7){
         tdTwoLine[i].classList.add('text_color_25');

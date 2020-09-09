@@ -1,5 +1,5 @@
 import './search-room.scss';
-import '../../../blocks/dropdown/dropdown';
-import '../../../blocks/range-slider/range-slider';
-import '../../../blocks/dropdown-room/dropdown-room';
-import '../../../blocks/expandable-checkbox-list/expandable-checkbox-list';
+import '../../../elements/dropdown/dropdown';
+import '../../../elements/range-slider/range-slider';
+import '../../../elements/dropdown-room/dropdown-room';
+import '../../../elements/expandable-checkbox-list/expandable-checkbox-list';

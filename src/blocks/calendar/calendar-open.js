@@ -1,21 +1,12 @@
-let arrow = document.querySelectorAll('.blockDateDropdownList i');
-let calendar = document.querySelector('.containerHide_type_hide');
-let shadow = document.querySelector('.cardsMini');
+const arrow = document.querySelectorAll('.blockDateDropdownList i');
+const calendar = document.querySelector('.containerHide_type_hide');
+const shadow = document.querySelector('.cardsMini');
 
-arrow[0].onclick=arrow[1].onclick = CalendarStatusSelection;
+arrow[0].onclick=arrow[1].onclick = Open;
 
-function CalendarStatusSelection(){
-if(calendar.classList.contains('containerHide_type_hide')){
-    Open();
-}
-else{
-    Close();
-}
-}
-
-function Open (){
-    shadow.classList.remove('cardsMini_shadow_shadow');
-    calendar.classList.remove('containerHide_type_hide');
+export function Open (){
+    shadow.classList.toggle('cardsMini_shadow_shadow');
+    calendar.classList.toggle('containerHide_type_hide');
 }
 
 function Close (){

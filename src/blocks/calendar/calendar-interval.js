@@ -1,6 +1,6 @@
-let date = document.querySelectorAll('td');
-let clear = document.querySelector('div.blockcalendarList p:first-child');
-let calendar = document.querySelector('.containerHide');
+const date = document.querySelectorAll('td');
+const clear = document.querySelector('div.blockcalendarList p:first-child');
+const calendar = document.querySelector('.containerHide');
 
 function CreateDiv(){
     return document.createElement('div');

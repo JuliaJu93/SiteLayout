@@ -14,12 +14,17 @@
     height: 29.2rem;
 }
 
+.cardsRoomRate i{
+    cursor: pointer;
+}
+
 .rateRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: -0.2rem;
+    position: relative;
 }
 
 .rateRow__total{

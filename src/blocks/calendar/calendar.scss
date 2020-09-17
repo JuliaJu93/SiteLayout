@@ -1,4 +1,4 @@
-.cardsMini{
+.calendar{
     width: 17.1rem;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -9,6 +9,10 @@
     z-index: 99;
 }
 
+.calendar_shadow_shadow{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
 .containerHide{
     position: absolute;
     top: 16.2rem;
@@ -17,10 +21,6 @@
 
 .containerHide_type_hide{
     display: none;
-}
-
-.cardsMini_shadow_shadow{
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
 .calendarContainer{
@@ -73,6 +73,7 @@ td{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .blockcalendarList{
@@ -83,6 +84,10 @@ td{
     justify-content: space-between;
     width: 17.5rem;
     margin: 1rem 0 -0.27rem -0.4;
+}
+
+.blockcalendarList p {
+    cursor: pointer;
 }
 
 .calendarCircle {
@@ -119,4 +124,3 @@ td{
 .intervalColor{
     background-color:  rgba(188, 156, 255, 0.2);
 }
-

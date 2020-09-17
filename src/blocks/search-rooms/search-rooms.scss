@@ -13,6 +13,10 @@
     padding: 1.4rem 1.8rem 1.1rem 1.8rem;
 }
 
+.cardsSearch button, .cardsSearch i{
+    cursor: pointer;
+}
+
 .cardsRow{
     display: flex;
     flex-direction: row;

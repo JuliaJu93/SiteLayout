@@ -33,6 +33,10 @@
     padding: 0 0.3rem 0 0.8rem;
 }
 
+.blockDropdownList p, .blockDropdownList button{
+    cursor: pointer;
+}
+
 .blockDropdownList:last-child{
     margin-top: 0.8rem;
     margin-bottom: 0.4rem;

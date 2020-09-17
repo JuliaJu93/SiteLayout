@@ -23,6 +23,6 @@ mixin header(buttons, oneLi, twoLi, threeLi, fourLi, fifeLi, sixLi, buttonOneNam
             if (buttons)
                 .buttonsContainer(class=widthButtonContainer)
                     include ../../elements/buttons/buttons
-                    +button(buttonOneName,'button_border_withBorder', 'button_size_mini', buttonStyleOne)
-                    +button(buttonTwoName, 'button_color_gradient', 'button_size_mini', buttonStyleTwo)
+                    +button(buttonOneName,'button_border_withBorder', 'button_size_mini', buttonStyleOne, "location.href='sign-in.html'")
+                    +button(buttonTwoName, 'button_color_gradient', 'button_size_mini', buttonStyleTwo, "location.href='registration.html'")
     

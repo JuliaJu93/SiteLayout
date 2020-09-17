@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.containerDropdownRoom i{
+    cursor: pointer;
+}
+
 .blockDropdownRoomMain{
     display: flex;
     flex-direction: row;
@@ -20,6 +24,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0rem 0.3rem 0 0.7rem;
+}
+
+.blockRoomList button{
+   cursor: pointer;
 }
 
 .blockDropdownRoomMain > .blockRoomList:first-child{

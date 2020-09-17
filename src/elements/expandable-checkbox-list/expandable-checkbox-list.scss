@@ -7,6 +7,10 @@
     width: 15.7rem;
 }
 
+.blockExpandableCheckboxList i{
+    cursor: pointer;
+}
+
 .expandableCheckboxList  .blockCheckbox:first-child{
     margin: 0.9rem 0 0;
 }

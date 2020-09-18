@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.registrationRow button{
+    cursor: pointer;
+}
+
 .cardsRowStart{
     display: flex;
     flex-direction: row;

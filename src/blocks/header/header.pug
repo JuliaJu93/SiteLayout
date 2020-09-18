@@ -5,7 +5,7 @@ mixin header(buttons, oneLi, twoLi, threeLi, fourLi, fifeLi, sixLi, buttonOneNam
         .containerNav(class=widthNav)
             nav 
                 ul
-                    li.bodyText.text_height_17.text_weight_bold=oneLi
+                    li.bodyText.text_height_17.text_weight_bold(onClick="location.href='landing-pages.html'")=oneLi
                     li.bodyText.text_height_17=twoLi
                         if (twoLi==="Услуги")
                             i.fa.fa-angle-down.fa-lg.text_color_50(aria-hidden="true")

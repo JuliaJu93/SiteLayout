@@ -16,7 +16,7 @@
 
 .containerHide{
     top: 49rem;
-    left: 59.25rem;
+    left: 63rem;
 }
 
 .containerForImg{
@@ -140,6 +140,16 @@
         display: flex;
         justify-content: center;
     }
+    .containerHide{
+        top: 47.7rem;
+        left: 62.5rem;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .containerHide{
+        left: 55.5rem;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -180,6 +190,9 @@
     .containerForImg img{
         width: 100%;
     }
+    .containerHide{
+        left: 37.5rem;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -202,6 +215,10 @@
     .containerForInformation__maxi>.containerForInformation__blockRow{
         width: 100%;
     }
+    .containerHide{
+        top: 43rem;
+        left: 16.5rem;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -218,6 +235,10 @@
     img{
         display: none;
     }
+    .containerHide{
+        top: 22rem;
+        left: 8.5rem;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -231,5 +252,8 @@
     }
     .blockDropdownMain, .containerDropdownList{
         width: 100%;
+    }
+    .containerHide{
+        left: 4.5rem;
     }
 }

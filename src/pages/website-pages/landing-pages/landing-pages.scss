@@ -49,6 +49,10 @@
         width: 70%;
         padding: 2rem;
     }
+    .containerHide{
+        top: 13.9rem;
+        left: 3.9rem;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -60,11 +64,25 @@
         width: 100%;
         text-align: center;
     }
-}
-@media screen and (max-width: 850px) {
     .containerImg{
         padding: 1rem 0.5rem;
         height: 70%;
+    }
+    .containerHide{
+        top: 13rem;
+        left: 16rem;
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .containerHide{
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 550px) { 
+    .containerHide{
+        left: -2rem;
     }
 }
 
@@ -89,5 +107,15 @@
     }
     .cardscontainer:last-child{
         margin: 0;
+    }
+    .containerHide{
+        top: 12.4rem;
+        left: 3rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .containerHide{
+        top: 16rem;
+        left: 2rem;
     }
 }
